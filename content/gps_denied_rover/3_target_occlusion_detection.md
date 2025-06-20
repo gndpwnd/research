@@ -87,7 +87,7 @@ Geometric detection examines whether distance measurements from all anchors are 
 
 **Step 2: Generate Distance Circles**
 1. For each anchor $i$ at position $(x_i, y_i)$ with measured distance $r_i$:
-   $$\text{Circle}_i: (x - x_i)^2 + (y - y_i)^2 = r_i^2$$
+   $$\mathrm{Circle}_i: (x - x_i)^2 + (y - y_i)^2 = r_i^2$$
 
 **Step 3: Calculate Pairwise Circle Intersections**
 1. For each pair of anchors $(i, j)$ where $i < j$:
@@ -113,38 +113,38 @@ Geometric detection examines whether distance measurements from all anchors are 
 3. Calculate distance from candidate to each anchor:
    $$d_{k,i} = \sqrt{(x_k - x_i)^2 + (y_k - y_i)^2}$$
 4. Count intersecting circles at each candidate point:
-   $$\text{intersection\_count}_k = \sum_{i=1}^{n} \begin{cases} 1 & \text{if } |d_{k,i} - r_i| \leq \epsilon_{geo} \\ 0 & \text{otherwise} \end{cases}$$
+   $$\mathrm{intersection\_count}_k = \sum_{i=1}^{n} \begin{cases} 1 & \mathrm{if } |d_{k,i} - r_i| \leq \epsilon_{geo} \\ 0 & \mathrm{otherwise} \end{cases}$$
 5. **Rover Position Identification**: The point with maximum intersection count represents the rover's multilateration solution:
-   $$\text{rover\_position} = \arg\max_k(\text{intersection\_count}_k)$$
+   $$\mathrm{rover\_position} = \arg\max_k(\mathrm{intersection\_count}_k)$$
 
 **Step 5: Occlusion Detection Through Intersection Analysis**
-1. Find maximum intersection count: $\text{count}_{max} = \max_k(\text{intersection\_count}_k)$
+1. Find maximum intersection count: $\mathrm{count}_{max} = \max_k(\mathrm{intersection\_count}_k)$
 2. **Case 1: No Occlusion Detected**
-   - If $\text{count}_{max} = n$: All $n$ circles intersect at the rover position
+   - If $\mathrm{count}_{max} = n$: All $n$ circles intersect at the rover position
    - This indicates perfect geometric consistency with all anchors in LOS
    - Rover position is precisely determined through multilateration
 3. **Case 2: Single Anchor Occlusion**
-   - If $\text{count}_{max} = n-1$: Only $n-1$ circles intersect at the rover position
+   - If $\mathrm{count}_{max} = n-1$: Only $n-1$ circles intersect at the rover position
    - One anchor is geometrically inconsistent, indicating occlusion
    - System can still determine position using $n-1$ valid anchors
    - Proceed to Step 6 for occluded anchor identification
 4. **Case 3: Multiple Anchor Occlusions**
-   - If $\text{count}_{max} < n-1$: Fewer than $n-1$ circles intersect at any point
+   - If $\mathrm{count}_{max} < n-1$: Fewer than $n-1$ circles intersect at any point
    - Multiple anchors are occluded, severely compromising multilateration
    - Example: With 4 anchors, if only 2 circles intersect at maximum, then 2+ anchors are occluded
    - Proceed to Step 7 for comprehensive occlusion analysis
 
 **Step 6: Single Occlusion Identification**
-1. Identify the rover position from Step 5 (point with $\text{count}_{max} = n-1$ intersections)
+1. Identify the rover position from Step 5 (point with $\mathrm{count}_{max} = n-1$ intersections)
 2. For each anchor $i$, calculate distance from rover position to anchor:
    $$d_{rover,i} = \sqrt{(x_{rover} - x_i)^2 + (y_{rover} - y_i)^2}$$
 3. Compare with measured ToF distance:
-   $$\text{error}_i = |d_{rover,i} - r_i|$$
-4. The anchor with $\text{error}_i > \epsilon_{geo}$ is the occluded anchor
+   $$\mathrm{error}_i = |d_{rover,i} - r_i|$$
+4. The anchor with $\mathrm{error}_i > \epsilon_{geo}$ is the occluded anchor
 5. **Multilateration Solution**: Use remaining $n-1$ consistent anchors for final position estimate
 
 **Step 7: Multiple Occlusion Analysis**
-1. Since no point has sufficient circle intersections ($\text{count}_{max} < n-1$), systematically test anchor combinations:
+1. Since no point has sufficient circle intersections ($\mathrm{count}_{max} < n-1$), systematically test anchor combinations:
    - Test exclusion of 2 anchors: $\binom{n}{2}$ combinations
    - For each combination, use remaining $n-2$ anchors
    - Check if remaining circles achieve intersection count = $n-2$
@@ -165,7 +165,7 @@ Geometric detection examines whether distance measurements from all anchors are 
 
 **Step 2: Generate Distance Spheres**
 1. For each anchor $i$ at position $(x_i, y_i, z_i)$ with measured distance $r_i$:
-   $$\text{Sphere}_i: (x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = r_i^2$$
+   $$\mathrm{Sphere}_i: (x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 = r_i^2$$
 
 **Step 3: Calculate Sphere-Sphere Intersections**
 1. For each pair of anchors $(i, j)$ where $i < j$:
@@ -206,26 +206,26 @@ Geometric detection examines whether distance measurements from all anchors are 
 **Step 5: Sphere Intersection Validation and Occlusion Detection**
 1. For the calculated rover position, determine how many spheres intersect at this point
 2. Calculate distance error for each sphere:
-   $$\text{error}_i = \left| \sqrt{(x_{rover} - x_i)^2 + (y_{rover} - y_i)^2 + (z_{rover} - z_i)^2} - r_i \right|$$
+   $$\mathrm{error}_i = \left| \sqrt{(x_{rover} - x_i)^2 + (y_{rover} - y_i)^2 + (z_{rover} - z_i)^2} - r_i \right|$$
 3. Count spheres intersecting at rover position:
-   $$\text{intersection\_count} = \sum_{i=1}^{n} \begin{cases} 1 & \text{if } \text{error}_i \leq \epsilon_{geo} \\ 0 & \text{otherwise} \end{cases}$$
+   $$\mathrm{intersection\_count} = \sum_{i=1}^{n} \begin{cases} 1 & \mathrm{if } \mathrm{error}_i \leq \epsilon_{geo} \\ 0 & \mathrm{otherwise} \end{cases}$$
 
 **Step 6: 3D Occlusion Classification**
 1. **Case 1: No Occlusion**
-   - If $\text{intersection\_count} = n$: All $n$ spheres intersect at rover position
+   - If $\mathrm{intersection\_count} = n$: All $n$ spheres intersect at rover position
    - Perfect multilateration solution with all anchors in LOS
 2. **Case 2: Single Occlusion**
-   - If $\text{intersection\_count} = n-1$: One sphere doesn't intersect at rover position
+   - If $\mathrm{intersection\_count} = n-1$: One sphere doesn't intersect at rover position
    - Single anchor occlusion detected
    - Proceed to Step 7 for identification
 3. **Case 3: Multiple Occlusions**
-   - If $\text{intersection\_count} < n-1$: Multiple spheres fail to intersect
+   - If $\mathrm{intersection\_count} < n-1$: Multiple spheres fail to intersect
    - Example: With 4 anchors, if only 2 spheres intersect, then 2+ anchors are occluded
    - Proceed to Step 8 for comprehensive analysis
 
 **Step 7: Single Occlusion Identification (3D)**
 1. The rover position from Step 4 represents the multilateration solution using $n-1$ valid anchors
-2. Identify occluded anchor as the one with $\text{error}_i > \epsilon_{geo}$
+2. Identify occluded anchor as the one with $\mathrm{error}_i > \epsilon_{geo}$
 3. Verify occlusion by re-solving multilateration without the suspected anchor:
    - Exclude anchor with highest error
    - Recalculate position using remaining $n-1$ anchors
@@ -233,7 +233,7 @@ Geometric detection examines whether distance measurements from all anchors are 
 
 **Step 8: Multiple Occlusion Analysis (3D)**
 1. Since fewer than $n-1$ spheres intersect at the rover position, systematically exclude anchors:
-   - Rank anchors by error magnitude: $\text{error}_1 \geq \text{error}_2 \geq ... \geq \text{error}_n$
+   - Rank anchors by error magnitude: $\mathrm{error}_1 \geq \mathrm{error}_2 \geq ... \geq \mathrm{error}_n$
    - Exclude highest-error anchors iteratively
 2. For each exclusion combination:
    - Re-solve multilateration with remaining anchors
@@ -287,17 +287,17 @@ Where:
 1. For each anchor $i$, compute range difference:
    $$\Delta r_i = r_{i,new} - r_{i,old}$$
 2. Apply triangle inequality test:
-   $$\text{violation}_i = \begin{cases} 
-   \text{True} & \text{if } |\Delta r_i| > L + \epsilon_{odom} \\
-   \text{False} & \text{otherwise}
+   $$\mathrm{violation}_i = \begin{cases} 
+   \mathrm{True} & \mathrm{if } |\Delta r_i| > L + \epsilon_{odom} \\
+   \mathrm{False} & \mathrm{otherwise}
    \end{cases}$$
 
 **Step 5: Enhanced Geometric Validation (Optional)**
 1. If rover heading $\theta$ and anchor bearing $\phi_i$ are known, use law of cosines:
    $$r_{i,expected} = \sqrt{r_{i,old}^2 + L^2 - 2 \cdot r_{i,old} \cdot L \cdot \cos(\phi_i - \theta)}$$
 2. Compare with measured value:
-   $$\text{error}_i = |r_{i,new} - r_{i,expected}|$$
-3. Flag if $\text{error}_i > \epsilon_{odom}$
+   $$\mathrm{error}_i = |r_{i,new} - r_{i,expected}|$$
+3. Flag if $\mathrm{error}_i > \epsilon_{odom}$
 
 **Step 6: Identify Occluded Anchors**
 1. **Single Violation:**
@@ -330,8 +330,8 @@ Combining geometric and odometry-based detection provides robust occlusion ident
 1. Execute geometric detection algorithm (Section 3)
 2. Execute odometry-based detection algorithm (Section 4)
 3. Record results for each anchor:
-   - $\text{geo\_occluded}_i$: Boolean result from geometric test
-   - $\text{odom\_occluded}_i$: Boolean result from odometry test
+   - $\mathrm{geo\_occluded}_i$: Boolean result from geometric test
+   - $\mathrm{odom\_occluded}_i$: Boolean result from odometry test
 
 **Step 2: Confidence Weighting**
 1. Assign confidence weights based on system conditions:
@@ -341,11 +341,11 @@ Combining geometric and odometry-based detection provides robust occlusion ident
 
 **Step 3: Fusion Decision**
 1. Calculate combined occlusion probability for each anchor:
-   $$P(\text{occluded}_i) = w_{geo} \cdot \text{geo\_occluded}_i + w_{odom} \cdot \text{odom\_occluded}_i$$
+   $$P(\mathrm{occluded}_i) = w_{geo} \cdot \mathrm{geo\_occluded}_i + w_{odom} \cdot \mathrm{odom\_occluded}_i$$
 2. Apply threshold decision:
-   $$\text{final\_occluded}_i = \begin{cases}
-   \text{True} & \text{if } P(\text{occluded}_i) > 0.6 \\
-   \text{False} & \text{otherwise}
+   $$\mathrm{final\_occluded}_i = \begin{cases}
+   \mathrm{True} & \mathrm{if } P(\mathrm{occluded}_i) > 0.6 \\
+   \mathrm{False} & \mathrm{otherwise}
    \end{cases}$$
 
 **Step 4: Consistency Validation**
