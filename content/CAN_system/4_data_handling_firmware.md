@@ -12,8 +12,10 @@ math: true
 
 This section covers the data handling processes and firmware used in a CAN system, including their functions and how they interact within the system.
 
-# Tuning
+## Engine Tuning
 
-## VE MAP
+### VE MAP
 
-## AFR MAP
+### AFR MAP
+
+## Dashboard Inidcators and Triggers
