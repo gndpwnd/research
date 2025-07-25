@@ -206,9 +206,9 @@ Geometric detection examines whether distance measurements from all anchors are 
 **Step 5: Sphere Intersection Validation and Occlusion Detection**
 1. For the calculated rover position, determine how many spheres intersect at this point
 2. Calculate distance error for each sphere:
-   $$\mathrm{error}_i = \left| \sqrt{(x_{rover} - x_i)^2 + (y_{rover} - y_i)^2 + (z_{rover} - z_i)^2} - r_i \right|$$
+   $$\mathrm{error}_i = \left| \sqrt{(x_{\mathrm{rover}} - x_i)^2 + (y_{\mathrm{rover}} - y_i)^2 + (z_{\mathrm{rover}} - z_i)^2} - r_i \right|$$
 3. Count spheres intersecting at rover position:
-   $$\mathrm{intersection\_count} = \sum_{i=1}^{n} \begin{cases} 1 & \mathrm{if } \mathrm{error}_i \leq \epsilon_{geo} \\ 0 & \mathrm{otherwise} \end{cases}$$
+   $$\mathrm{intersection\_count} = \sum_{i=1}^{n} \begin{cases} 1 & \mathrm{if} \; \mathrm{error}_i \leq \epsilon_{\mathrm{geo}} \\ 0 & \mathrm{otherwise} \end{cases}$$
 
 **Step 6: 3D Occlusion Classification**
 1. **Case 1: No Occlusion**
