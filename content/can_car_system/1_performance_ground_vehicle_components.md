@@ -1,8 +1,8 @@
 ---
 title: 1 - Performance Ground Vehicle Components
 type: docs
-prev: CAN_system/
-next: CAN_system/2_engine_components
+prev: can_car_system/
+next: can_car_system/2_engine_components
 sidebar:
   open: true
 math: true

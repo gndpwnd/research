@@ -8,8 +8,6 @@ sidebar:
 
 This project focuses on the development of a full-stack proof of concept that integrates cutting-edge AI research, autonomous swarm coordination, and real-time localization techniques to support a land-based rover operating in GPS-denied environments. The system utilizes drone-based agents to deliver precise positional corrections based on known GPS coordinates, enabling robust and resilient navigation.
 
-***"When you buy better sensors, what your buying is less noise. AI is very good at de-noising. Just take a cheap sensor and de-noise it. Then you can do something for 1/100th of the price."* - Ian Laffey, Thesus**
-
 ## Key Contributions
 
 - **Physics-Based Communication Modeling**  

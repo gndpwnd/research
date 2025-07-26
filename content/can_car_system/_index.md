@@ -1,7 +1,7 @@
 ---
-title: About the Open Source CAN System Project
+title: About the Open Source CAN System **Project**
 type: docs
-next: CAN_system/
+next: can_car_system/
 sidebar:
   open: true
 ---

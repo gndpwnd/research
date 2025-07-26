@@ -1,8 +1,8 @@
 ---
 title: 2 - Engine Components
 type: docs
-prev: CAN_system/1_performance_ground_vehicle_components
-next: CAN_system/3_sensors
+prev: can_car_system/1_performance_ground_vehicle_components
+next: can_car_system/3_sensors
 sidebar:
   open: true
 math: true
