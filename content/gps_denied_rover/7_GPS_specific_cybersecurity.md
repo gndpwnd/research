@@ -2,7 +2,7 @@
 title: 7 - GPS Specific Cybersecurity
 type: docs
 prev: gps_denied_rover/6_systems_calibration
-next: gps_denied_rover/
+next: gps_denied_rover/8_comprehensive_variables_and_constants
 sidebar:
   open: true
 math: true

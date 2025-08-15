@@ -2,7 +2,7 @@
 title: 6 - Systems Calibration
 type: docs
 prev: gps_denied_rover/5_aps_triggering
-next: gps_denied_rover/
+next: gps_denied_rover/7_GPS_specific_cybersecurity
 sidebar:
   open: true
 math: true
