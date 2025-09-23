@@ -5,8 +5,8 @@
 &lt;li&gt;reporting&lt;/li&gt;
 &lt;li&gt;numerical data into natural language&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/gps_denied_rover/4.5_gps_denial_detection_reqs_cons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/gps_denied_rover/4.5_gps_denial_detection_reqs_cons/</guid><description>
-&lt;h1&gt;GPS Denial Detection Requirements and Constraints - Complete Implementation Guide&lt;/h1&gt;&lt;h2&gt;Signal Quality Indicators&lt;span class="hx-absolute -hx-mt-20" id="signal-quality-indicators"&gt;&lt;/span&gt;
-&lt;a href="#signal-quality-indicators" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Satellite Lock Monitoring&lt;span class="hx-absolute -hx-mt-20" id="satellite-lock-monitoring"&gt;&lt;/span&gt;
+&lt;h1&gt;GPS Denial Detection Requirements and Constraints - Complete Implementation Guide&lt;/h1&gt;&lt;h2&gt;Signal Quality Indicators&lt;span class="hx:absolute hx:-mt-20" id="signal-quality-indicators"&gt;&lt;/span&gt;
+&lt;a href="#signal-quality-indicators" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Satellite Lock Monitoring&lt;span class="hx:absolute hx:-mt-20" id="satellite-lock-monitoring"&gt;&lt;/span&gt;
 &lt;a href="#satellite-lock-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Fix Quality Degradation Detection&lt;/strong&gt;&lt;/p&gt;
@@ -37,7 +37,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Satellite Count Monitoring&lt;span class="hx-absolute -hx-mt-20" id="satellite-count-monitoring"&gt;&lt;/span&gt;
+&lt;h3&gt;Satellite Count Monitoring&lt;span class="hx:absolute hx:-mt-20" id="satellite-count-monitoring"&gt;&lt;/span&gt;
 &lt;a href="#satellite-count-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="5"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Satellite Count Warning Threshold&lt;/strong&gt;&lt;/p&gt;
@@ -61,7 +61,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Signal Strength Analysis&lt;span class="hx-absolute -hx-mt-20" id="signal-strength-analysis"&gt;&lt;/span&gt;
+&lt;h3&gt;Signal Strength Analysis&lt;span class="hx:absolute hx:-mt-20" id="signal-strength-analysis"&gt;&lt;/span&gt;
 &lt;a href="#signal-strength-analysis" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="8"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Carrier-to-Noise Ratio Degradation Detection&lt;/strong&gt;&lt;/p&gt;
@@ -85,8 +85,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Data Integrity Monitoring&lt;span class="hx-absolute -hx-mt-20" id="data-integrity-monitoring"&gt;&lt;/span&gt;
-&lt;a href="#data-integrity-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Message Corruption Detection&lt;span class="hx-absolute -hx-mt-20" id="message-corruption-detection"&gt;&lt;/span&gt;
+&lt;h2&gt;Data Integrity Monitoring&lt;span class="hx:absolute hx:-mt-20" id="data-integrity-monitoring"&gt;&lt;/span&gt;
+&lt;a href="#data-integrity-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Message Corruption Detection&lt;span class="hx:absolute hx:-mt-20" id="message-corruption-detection"&gt;&lt;/span&gt;
 &lt;a href="#message-corruption-detection" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="11"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Checksum Failure Rate Monitoring&lt;/strong&gt;&lt;/p&gt;
@@ -110,7 +110,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;RAIM Monitoring&lt;span class="hx-absolute -hx-mt-20" id="raim-monitoring"&gt;&lt;/span&gt;
+&lt;h3&gt;RAIM Monitoring&lt;span class="hx:absolute hx:-mt-20" id="raim-monitoring"&gt;&lt;/span&gt;
 &lt;a href="#raim-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="14"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;RAIM Test Statistic Monitoring&lt;/strong&gt;&lt;/p&gt;
@@ -141,8 +141,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Position and Velocity Consistency&lt;span class="hx-absolute -hx-mt-20" id="position-and-velocity-consistency"&gt;&lt;/span&gt;
-&lt;a href="#position-and-velocity-consistency" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Position Jump Detection&lt;span class="hx-absolute -hx-mt-20" id="position-jump-detection"&gt;&lt;/span&gt;
+&lt;h2&gt;Position and Velocity Consistency&lt;span class="hx:absolute hx:-mt-20" id="position-and-velocity-consistency"&gt;&lt;/span&gt;
+&lt;a href="#position-and-velocity-consistency" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Position Jump Detection&lt;span class="hx:absolute hx:-mt-20" id="position-jump-detection"&gt;&lt;/span&gt;
 &lt;a href="#position-jump-detection" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="18"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Position Jump Magnitude Detection&lt;/strong&gt;&lt;/p&gt;
@@ -166,7 +166,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Velocity Validation&lt;span class="hx-absolute -hx-mt-20" id="velocity-validation"&gt;&lt;/span&gt;
+&lt;h3&gt;Velocity Validation&lt;span class="hx:absolute hx:-mt-20" id="velocity-validation"&gt;&lt;/span&gt;
 &lt;a href="#velocity-validation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="21"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Rover Velocity Limit Monitoring&lt;/strong&gt;&lt;/p&gt;
@@ -190,8 +190,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;RTK-Specific Indicators&lt;span class="hx-absolute -hx-mt-20" id="rtk-specific-indicators"&gt;&lt;/span&gt;
-&lt;a href="#rtk-specific-indicators" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Fix Status Monitoring&lt;span class="hx-absolute -hx-mt-20" id="fix-status-monitoring"&gt;&lt;/span&gt;
+&lt;h2&gt;RTK-Specific Indicators&lt;span class="hx:absolute hx:-mt-20" id="rtk-specific-indicators"&gt;&lt;/span&gt;
+&lt;a href="#rtk-specific-indicators" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Fix Status Monitoring&lt;span class="hx:absolute hx:-mt-20" id="fix-status-monitoring"&gt;&lt;/span&gt;
 &lt;a href="#fix-status-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="24"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;RTK Fix Status Validation&lt;/strong&gt;&lt;/p&gt;
@@ -208,7 +208,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Carrier Phase Monitoring&lt;span class="hx-absolute -hx-mt-20" id="carrier-phase-monitoring"&gt;&lt;/span&gt;
+&lt;h3&gt;Carrier Phase Monitoring&lt;span class="hx:absolute hx:-mt-20" id="carrier-phase-monitoring"&gt;&lt;/span&gt;
 &lt;a href="#carrier-phase-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="26"&gt;
 &lt;li&gt;&lt;strong&gt;Carrier Phase Cycle Slip Detection&lt;/strong&gt;
 &lt;ul&gt;
@@ -217,8 +217,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Cross-Sensor Validation&lt;span class="hx-absolute -hx-mt-20" id="cross-sensor-validation"&gt;&lt;/span&gt;
-&lt;a href="#cross-sensor-validation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;INS/GPS Comparison&lt;span class="hx-absolute -hx-mt-20" id="insgps-comparison"&gt;&lt;/span&gt;
+&lt;h2&gt;Cross-Sensor Validation&lt;span class="hx:absolute hx:-mt-20" id="cross-sensor-validation"&gt;&lt;/span&gt;
+&lt;a href="#cross-sensor-validation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;INS/GPS Comparison&lt;span class="hx:absolute hx:-mt-20" id="insgps-comparison"&gt;&lt;/span&gt;
 &lt;a href="#insgps-comparison" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="27"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;GPS-INS Position Consistency Check&lt;/strong&gt;&lt;/p&gt;
@@ -242,7 +242,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Wheel Odometry Integration&lt;span class="hx-absolute -hx-mt-20" id="wheel-odometry-integration"&gt;&lt;/span&gt;
+&lt;h3&gt;Wheel Odometry Integration&lt;span class="hx:absolute hx:-mt-20" id="wheel-odometry-integration"&gt;&lt;/span&gt;
 &lt;a href="#wheel-odometry-integration" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="30"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;GPS-Wheel Odometry Distance Comparison&lt;/strong&gt;&lt;/p&gt;
@@ -259,7 +259,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;IMU Cross-Validation&lt;span class="hx-absolute -hx-mt-20" id="imu-cross-validation"&gt;&lt;/span&gt;
+&lt;h3&gt;IMU Cross-Validation&lt;span class="hx:absolute hx:-mt-20" id="imu-cross-validation"&gt;&lt;/span&gt;
 &lt;a href="#imu-cross-validation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="32"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;GPS-IMU Angular Rate Comparison&lt;/strong&gt;&lt;/p&gt;
@@ -276,7 +276,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;UWB Cross-Validation&lt;span class="hx-absolute -hx-mt-20" id="uwb-cross-validation"&gt;&lt;/span&gt;
+&lt;h3&gt;UWB Cross-Validation&lt;span class="hx:absolute hx:-mt-20" id="uwb-cross-validation"&gt;&lt;/span&gt;
 &lt;a href="#uwb-cross-validation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="34"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;UWB Distance Consistency Normal Check&lt;/strong&gt;&lt;/p&gt;
@@ -293,8 +293,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Environmental Adaptations&lt;span class="hx-absolute -hx-mt-20" id="environmental-adaptations"&gt;&lt;/span&gt;
-&lt;a href="#environmental-adaptations" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Environment-Specific Thresholds&lt;span class="hx-absolute -hx-mt-20" id="environment-specific-thresholds"&gt;&lt;/span&gt;
+&lt;h2&gt;Environmental Adaptations&lt;span class="hx:absolute hx:-mt-20" id="environmental-adaptations"&gt;&lt;/span&gt;
+&lt;a href="#environmental-adaptations" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Environment-Specific Thresholds&lt;span class="hx:absolute hx:-mt-20" id="environment-specific-thresholds"&gt;&lt;/span&gt;
 &lt;a href="#environment-specific-thresholds" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="36"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Environment-Based Threshold Adjustment&lt;/strong&gt;&lt;/p&gt;
@@ -325,7 +325,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Dynamic Threshold Management&lt;span class="hx-absolute -hx-mt-20" id="dynamic-threshold-management"&gt;&lt;/span&gt;
+&lt;h3&gt;Dynamic Threshold Management&lt;span class="hx:absolute hx:-mt-20" id="dynamic-threshold-management"&gt;&lt;/span&gt;
 &lt;a href="#dynamic-threshold-management" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="40"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Adaptive Detection Threshold Adjustment&lt;/strong&gt;&lt;/p&gt;
@@ -349,8 +349,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Multi-Indicator Fusion&lt;span class="hx-absolute -hx-mt-20" id="multi-indicator-fusion"&gt;&lt;/span&gt;
-&lt;a href="#multi-indicator-fusion" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Weighted Decision Algorithm&lt;span class="hx-absolute -hx-mt-20" id="weighted-decision-algorithm"&gt;&lt;/span&gt;
+&lt;h2&gt;Multi-Indicator Fusion&lt;span class="hx:absolute hx:-mt-20" id="multi-indicator-fusion"&gt;&lt;/span&gt;
+&lt;a href="#multi-indicator-fusion" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Weighted Decision Algorithm&lt;span class="hx:absolute hx:-mt-20" id="weighted-decision-algorithm"&gt;&lt;/span&gt;
 &lt;a href="#weighted-decision-algorithm" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="43"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;GPS Health Score Calculation&lt;/strong&gt;&lt;/p&gt;
@@ -388,7 +388,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Temporal Filtering&lt;span class="hx-absolute -hx-mt-20" id="temporal-filtering"&gt;&lt;/span&gt;
+&lt;h3&gt;Temporal Filtering&lt;span class="hx:absolute hx:-mt-20" id="temporal-filtering"&gt;&lt;/span&gt;
 &lt;a href="#temporal-filtering" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="48"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Detection Counter Confirmation&lt;/strong&gt;&lt;/p&gt;
@@ -412,8 +412,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;System Performance Constraints&lt;span class="hx-absolute -hx-mt-20" id="system-performance-constraints"&gt;&lt;/span&gt;
-&lt;a href="#system-performance-constraints" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Timing Requirements&lt;span class="hx-absolute -hx-mt-20" id="timing-requirements"&gt;&lt;/span&gt;
+&lt;h2&gt;System Performance Constraints&lt;span class="hx:absolute hx:-mt-20" id="system-performance-constraints"&gt;&lt;/span&gt;
+&lt;a href="#system-performance-constraints" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Timing Requirements&lt;span class="hx:absolute hx:-mt-20" id="timing-requirements"&gt;&lt;/span&gt;
 &lt;a href="#timing-requirements" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="51"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Detection Latency Requirement&lt;/strong&gt;&lt;/p&gt;
@@ -437,7 +437,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Accuracy Requirements&lt;span class="hx-absolute -hx-mt-20" id="accuracy-requirements"&gt;&lt;/span&gt;
+&lt;h3&gt;Accuracy Requirements&lt;span class="hx:absolute hx:-mt-20" id="accuracy-requirements"&gt;&lt;/span&gt;
 &lt;a href="#accuracy-requirements" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="54"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Position Accuracy Constraint&lt;/strong&gt;&lt;/p&gt;
@@ -461,7 +461,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Resource Constraints&lt;span class="hx-absolute -hx-mt-20" id="resource-constraints"&gt;&lt;/span&gt;
+&lt;h3&gt;Resource Constraints&lt;span class="hx:absolute hx:-mt-20" id="resource-constraints"&gt;&lt;/span&gt;
 &lt;a href="#resource-constraints" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="57"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;CPU Utilization Constraint&lt;/strong&gt;&lt;/p&gt;
@@ -485,8 +485,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;APS Transition Logic&lt;span class="hx-absolute -hx-mt-20" id="aps-transition-logic"&gt;&lt;/span&gt;
-&lt;a href="#aps-transition-logic" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Preparation Phase&lt;span class="hx-absolute -hx-mt-20" id="preparation-phase"&gt;&lt;/span&gt;
+&lt;h2&gt;APS Transition Logic&lt;span class="hx:absolute hx:-mt-20" id="aps-transition-logic"&gt;&lt;/span&gt;
+&lt;a href="#aps-transition-logic" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Preparation Phase&lt;span class="hx:absolute hx:-mt-20" id="preparation-phase"&gt;&lt;/span&gt;
 &lt;a href="#preparation-phase" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="60"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;APS Preparation Countdown&lt;/strong&gt;&lt;/p&gt;
@@ -510,7 +510,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Activation Triggers&lt;span class="hx-absolute -hx-mt-20" id="activation-triggers"&gt;&lt;/span&gt;
+&lt;h3&gt;Activation Triggers&lt;span class="hx:absolute hx:-mt-20" id="activation-triggers"&gt;&lt;/span&gt;
 &lt;a href="#activation-triggers" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="63"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;GPS-to-APS Transition Delay&lt;/strong&gt;&lt;/p&gt;
@@ -534,7 +534,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Recovery Monitoring&lt;span class="hx-absolute -hx-mt-20" id="recovery-monitoring"&gt;&lt;/span&gt;
+&lt;h3&gt;Recovery Monitoring&lt;span class="hx:absolute hx:-mt-20" id="recovery-monitoring"&gt;&lt;/span&gt;
 &lt;a href="#recovery-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="66"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;GPS Recovery Signal Detection&lt;/strong&gt;&lt;/p&gt;
@@ -565,8 +565,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Quality Assurance&lt;span class="hx-absolute -hx-mt-20" id="quality-assurance"&gt;&lt;/span&gt;
-&lt;a href="#quality-assurance" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Calibration Requirements&lt;span class="hx-absolute -hx-mt-20" id="calibration-requirements"&gt;&lt;/span&gt;
+&lt;h2&gt;Quality Assurance&lt;span class="hx:absolute hx:-mt-20" id="quality-assurance"&gt;&lt;/span&gt;
+&lt;a href="#quality-assurance" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Calibration Requirements&lt;span class="hx:absolute hx:-mt-20" id="calibration-requirements"&gt;&lt;/span&gt;
 &lt;a href="#calibration-requirements" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="70"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Extended Environmental Calibration&lt;/strong&gt;&lt;/p&gt;
@@ -597,7 +597,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Performance Validation&lt;span class="hx-absolute -hx-mt-20" id="performance-validation"&gt;&lt;/span&gt;
+&lt;h3&gt;Performance Validation&lt;span class="hx:absolute hx:-mt-20" id="performance-validation"&gt;&lt;/span&gt;
 &lt;a href="#performance-validation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="74"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;System Availability Target&lt;/strong&gt;&lt;/p&gt;
@@ -628,8 +628,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Additional Requirements from APS Triggering Documentation&lt;span class="hx-absolute -hx-mt-20" id="additional-requirements-from-aps-triggering-documentation"&gt;&lt;/span&gt;
-&lt;a href="#additional-requirements-from-aps-triggering-documentation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Multi-Criteria Decision Fusion&lt;span class="hx-absolute -hx-mt-20" id="multi-criteria-decision-fusion"&gt;&lt;/span&gt;
+&lt;h2&gt;Additional Requirements from APS Triggering Documentation&lt;span class="hx:absolute hx:-mt-20" id="additional-requirements-from-aps-triggering-documentation"&gt;&lt;/span&gt;
+&lt;a href="#additional-requirements-from-aps-triggering-documentation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Multi-Criteria Decision Fusion&lt;span class="hx:absolute hx:-mt-20" id="multi-criteria-decision-fusion"&gt;&lt;/span&gt;
 &lt;a href="#multi-criteria-decision-fusion" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start="78"&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;APS Score Calculation&lt;/strong&gt;&lt;/p&gt;

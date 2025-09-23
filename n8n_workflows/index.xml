@@ -1,100 +1,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research Projects – About N8N Workflows</title><link>https://gndpwnd.github.io/research/n8n_workflows/</link><description>Recent content in About N8N Workflows on Research Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://gndpwnd.github.io/research/n8n_workflows/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://gndpwnd.github.io/research/n8n_workflows/content_generator_models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/n8n_workflows/content_generator_models/</guid><description>
 &lt;h1&gt;Recommended Models and Upscalers&lt;/h1&gt;&lt;p&gt;This document outlines the recommended AI models and open-source upscalers for a hobbyist GPU setup (~12–16 GB VRAM) for creating text, video, audio, music, and image content.&lt;/p&gt;
-&lt;h2&gt;Recommended Models&lt;span class="hx-absolute -hx-mt-20" id="recommended-models"&gt;&lt;/span&gt;
-&lt;a href="#recommended-models" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;strong&gt;Text (Planning, Scripts, RAG for textbooks)&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="text-planning-scripts-rag-for-textbooks"&gt;&lt;/span&gt;
+&lt;h2&gt;Recommended Models&lt;span class="hx:absolute hx:-mt-20" id="recommended-models"&gt;&lt;/span&gt;
+&lt;a href="#recommended-models" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;strong&gt;Text (Planning, Scripts, RAG for textbooks)&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="text-planning-scripts-rag-for-textbooks"&gt;&lt;/span&gt;
 &lt;a href="#text-planning-scripts-rag-for-textbooks" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; LLaMA 3 8B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; High-quality full scripts and structured storytelling.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Fits on ~12–16 GB GPU (single GPU friendly).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Handles medium-length context well.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;Video Generation (Cinematic-ish 720p–1080p short clips)&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="video-generation-cinematic-ish-720p1080p-short-clips"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;Video Generation (Cinematic-ish 720p–1080p short clips)&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="video-generation-cinematic-ish-720p1080p-short-clips"&gt;&lt;/span&gt;
 &lt;a href="#video-generation-cinematic-ish-720p1080p-short-clips" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; Wan 2.1 14B (medium/small version)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; Small version (1.3B–14B) can generate 480–720p clips.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; ~12 GB GPU.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Can upscale to 1080p via ESRGAN / AI upscalers; good balance of quality vs VRAM use.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;Audio Speech / Narration&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="audio-speech--narration"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;Audio Speech / Narration&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="audio-speech--narration"&gt;&lt;/span&gt;
 &lt;a href="#audio-speech--narration" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; Orpheus 3B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; Multi-lingual TTS with guided emotion.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Fits on ~12 GB GPU.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Offers expressive narration without needing larger models like Higgs V2 (16–24 GB VRAM).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;Audio Music / SFX&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="audio-music--sfx"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;Audio Music / SFX&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="audio-music--sfx"&gt;&lt;/span&gt;
 &lt;a href="#audio-music--sfx" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; MusicGen 1.5B (medium)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; Text-to-music model producing cinematic-style audio.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; ~12 GB GPU.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Great for short emotional background tracks.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;Image / Thumbnail Generation&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="image--thumbnail-generation"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;Image / Thumbnail Generation&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="image--thumbnail-generation"&gt;&lt;/span&gt;
 &lt;a href="#image--thumbnail-generation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; Stable Diffusion XL (SDXL)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; High-quality thumbnails at 512–768 px.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; 8–12 GB GPU.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Best balance of quality and VRAM for hobbyist hardware; can be upscaled to 1080p or 4K.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Open-Source Upscalers for Images / Video Frames&lt;span class="hx-absolute -hx-mt-20" id="open-source-upscalers-for-images--video-frames"&gt;&lt;/span&gt;
-&lt;a href="#open-source-upscalers-for-images--video-frames" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;strong&gt;Real-ESRGAN&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="real-esrgan"&gt;&lt;/span&gt;
+&lt;h2&gt;Open-Source Upscalers for Images / Video Frames&lt;span class="hx:absolute hx:-mt-20" id="open-source-upscalers-for-images--video-frames"&gt;&lt;/span&gt;
+&lt;a href="#open-source-upscalers-for-images--video-frames" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;strong&gt;Real-ESRGAN&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="real-esrgan"&gt;&lt;/span&gt;
 &lt;a href="#real-esrgan" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; GAN-based super-resolution&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/xinntao/Real-ESRGAN" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/xinntao/Real-ESRGAN"target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; 8–12 GB GPU for 512–768 px → 1080p; 12–16 GB recommended for 4K&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Excellent for faces, objects, and general image fidelity; widely used for SDXL outputs.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;ESRGAN (Original / Enhanced)&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="esrgan-original--enhanced"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;ESRGAN (Original / Enhanced)&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="esrgan-original--enhanced"&gt;&lt;/span&gt;
 &lt;a href="#esrgan-original--enhanced" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; GAN-based super-resolution&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/xinntao/ESRGAN" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/xinntao/ESRGAN"target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Similar to Real-ESRGAN; slightly older, lighter VRAM usage&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Suitable for images and video frames; lightweight enough for hobbyist GPUs.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;SwinIR (Image Restoration Transformer)&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="swinir-image-restoration-transformer"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;SwinIR (Image Restoration Transformer)&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="swinir-image-restoration-transformer"&gt;&lt;/span&gt;
 &lt;a href="#swinir-image-restoration-transformer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; Transformer-based super-resolution&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/JingyunLiang/SwinIR" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/JingyunLiang/SwinIR"target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; ~8–12 GB VRAM for 512–768 px → 1080p; ~16 GB for 4K&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Produces sharp edges; great for architectural or detailed renders.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;Real-CUGAN&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="real-cugan"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;Real-CUGAN&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="real-cugan"&gt;&lt;/span&gt;
 &lt;a href="#real-cugan" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; GAN-based, optimized for real-world images&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/nihui/realsr-ncnn-vulkan" target="_blank" rel="noopener"&gt;GitHub (NCNN/Vulkan version)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/nihui/realsr-ncnn-vulkan"target="_blank" rel="noopener"&gt;GitHub (NCNN/Vulkan version)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Very efficient; 6–12 GB GPU&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Fast inference, high-quality output; Vulkan backend helps on Windows/WSL.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;Video2X / Waifu2X (Video Upscaling)&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="video2x--waifu2x-video-upscaling"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;Video2X / Waifu2X (Video Upscaling)&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="video2x--waifu2x-video-upscaling"&gt;&lt;/span&gt;
 &lt;a href="#video2x--waifu2x-video-upscaling" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; Multi-frame / image sequence upscaler (uses ESRGAN or SRGAN)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/k4yt3x/video2x" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/k4yt3x/video2x"target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; ~8–12 GB GPU for 720p → 1080p&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Ideal for video clips generated by Wan 2.1; can batch upscale frames efficiently.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;strong&gt;EDVR (Enhanced Deformable Video Restoration)&lt;/strong&gt;&lt;span class="hx-absolute -hx-mt-20" id="edvr-enhanced-deformable-video-restoration"&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;strong&gt;EDVR (Enhanced Deformable Video Restoration)&lt;/strong&gt;&lt;span class="hx:absolute hx:-mt-20" id="edvr-enhanced-deformable-video-restoration"&gt;&lt;/span&gt;
 &lt;a href="#edvr-enhanced-deformable-video-restoration" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; Video super-resolution / restoration&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/xinntao/EDVR" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open-source:&lt;/strong&gt; &lt;a href="https://github.com/xinntao/EDVR"target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; 12 GB+ GPU for 720p → 1080p; 16 GB+ for 4K sequences&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Specifically designed for video; maintains temporal consistency across frames.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I want to get the following recommended models up and running on my wsl system. I should have my intel arc gpu available for usage, i would prefer to use ollama&amp;rsquo;s environment to run models but let me know if i need another platform to run a model. Please help me setup the recommended models for whatever is optimal for original generation, then upscaling to get 1080p or 4k output at 30fps. I want to use the intel arc gpu for all of this. I would like clear an concise steps to get this done.&lt;/p&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/n8n_workflows/content_generator_models_setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/n8n_workflows/content_generator_models_setup/</guid><description>
 &lt;p&gt;Sure! Here&amp;rsquo;s your full guide formatted as a &lt;strong&gt;single Markdown code block&lt;/strong&gt; with all the inner code blocks preserved properly:&lt;/p&gt;
-&lt;h2&gt;1. Prepare WSL &amp;amp; Intel Arc GPU Support&lt;span class="hx-absolute -hx-mt-20" id="1-prepare-wsl--intel-arc-gpu-support"&gt;&lt;/span&gt;
+&lt;h2&gt;1. Prepare WSL &amp;amp; Intel Arc GPU Support&lt;span class="hx:absolute hx:-mt-20" id="1-prepare-wsl--intel-arc-gpu-support"&gt;&lt;/span&gt;
 &lt;a href="#1-prepare-wsl--intel-arc-gpu-support" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Install WSL2 (if not already installed)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;wsl&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="n"&gt;-install&lt;/span&gt; &lt;span class="n"&gt;-d&lt;/span&gt; &lt;span class="n"&gt;Ubuntu&lt;/span&gt;&lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;22.04&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;wsl&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="n"&gt;-update&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;wsl&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="n"&gt;-shutdown&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;wsl&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="n"&gt;-shutdown&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -103,64 +103,64 @@ title="Copy code"
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;Download and install Intel GPU driver for WSL / OpenCL / OneAPI:
-&lt;a href="https://www.intel.com/content/www/us/en/developer/articles/tool/openvino-toolkit.html" target="_blank" rel="noopener"&gt;Intel Arc WSL driver&lt;/a&gt;&lt;/li&gt;
+&lt;a href="https://www.intel.com/content/www/us/en/developer/articles/tool/openvino-toolkit.html"target="_blank" rel="noopener"&gt;Intel Arc WSL driver&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Verify GPU visibility in WSL:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
-&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;clinfo &lt;span class="p"&gt;|&lt;/span&gt; grep &lt;span class="s2"&gt;&amp;#34;Platform Name&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;clinfo &lt;span class="p"&gt;|&lt;/span&gt; grep &lt;span class="s2"&gt;&amp;#34;Platform Name&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;You should see &lt;code&gt;Intel(R) OpenCL Graphics&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
-&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir ai-interactive-reporting&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir ai-interactive-reporting&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;ol start="3"&gt;
 &lt;li&gt;&lt;strong&gt;Install Python + pip inside WSL&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt install python3 python3-venv python3-pip -y
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3.11 -m venv ~/venv
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/venv/bin/activate
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install --upgrade pip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install --upgrade pip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;install python without sudo&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;restart install from local if needed&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
-&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rm -rf &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/python3.11&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rm -rf &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/python3.11&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir -p &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://www.openssl.org/source/&lt;/span&gt;
@@ -169,17 +169,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; openssl-3.5.2
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./config --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl --openssldir&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://sourceware.org/libffi/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://github.com/libffi/libffi/releases/download/v3.4.5/libffi-3.4.5.tar.gz
@@ -187,17 +187,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; libffi-3.4.5
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/libffi
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://github.com/madler/zlib/releases&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz
@@ -205,17 +205,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; zlib-1.3.1
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/zlib
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tar -xvf Python-3.11.0.tgz
@@ -231,81 +231,81 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;if you don&amp;rsquo;t need to pre-install openssl, libffi, zlib, you can simplify to:&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz&lt;span class="p"&gt;;&lt;/span&gt; tar -xvf Python-3.11.0.tgz&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; Python-3.11.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/python3.11 --enable-optimizations&lt;span class="p"&gt;;&lt;/span&gt; make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; make install
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;code&gt;--prefix=$HOME/local/python3.11&lt;/code&gt; tells the build system to install everything there. After &lt;code&gt;make install&lt;/code&gt;, the Python binaries, libraries, and headers are copied into that directory.&lt;/p&gt;
 &lt;p&gt;You can safely delete the tarball (Python-3.11.0.tgz) and the extracted source folder (Python-3.11.0) after make install completes. The installed Python does not depend on the source folder—it’s fully installed in &lt;code&gt;$HOME/local/python3.11&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Your one-liner &lt;code&gt;echo 'export PATH=…' &amp;gt;&amp;gt; ~/.bashrc &amp;amp;&amp;amp; source ~/.bashrc&lt;/code&gt; ensures your shell sees this new Python immediately.&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3 --version
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3 -m venv venv
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; venv/bin/activate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; venv/bin/activate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install --upgrade pip
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install torch-directml torchvision torchaudio diffusers transformers safetensors accelerate opencv-python imageio pdfplumber markdown&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install torch-directml torchvision torchaudio diffusers transformers safetensors accelerate opencv-python imageio pdfplumber markdown&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r Real-ESRGAN/requirements.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r stable-diffusion-webui/requirements.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r Wan2.1/requirements.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r orpheus/requirements.txt
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install musicgen&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install musicgen&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2&gt;2. Text Models (Planning, Scripts)&lt;span class="hx-absolute -hx-mt-20" id="2-text-models-planning-scripts"&gt;&lt;/span&gt;
+&lt;h2&gt;2. Text Models (Planning, Scripts)&lt;span class="hx:absolute hx:-mt-20" id="2-text-models-planning-scripts"&gt;&lt;/span&gt;
 &lt;a href="#2-text-models-planning-scripts" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; LLaMA 3 8B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Optimal Platform:&lt;/strong&gt; Ollama&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Setup Steps:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Install Ollama CLI&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -sSL https://ollama.com/install.sh &lt;span class="p"&gt;|&lt;/span&gt; bash
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
@@ -313,13 +313,13 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ollama pull llamamodels/llama-3-8b
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Test a prompt&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ollama run llama-3-8b &lt;span class="s2"&gt;&amp;#34;Write a short story...&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ollama run llama-3-8b &lt;span class="s2"&gt;&amp;#34;Write a short story...&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -327,18 +327,18 @@ title="Copy code"
 &lt;p&gt;Ollama automatically uses available GPU if supported.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2&gt;3. Image Generation &amp;amp; Upscaling&lt;span class="hx-absolute -hx-mt-20" id="3-image-generation--upscaling"&gt;&lt;/span&gt;
-&lt;a href="#3-image-generation--upscaling" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Image Generation (SDXL)&lt;span class="hx-absolute -hx-mt-20" id="image-generation-sdxl"&gt;&lt;/span&gt;
-&lt;a href="#image-generation-sdxl" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h2&gt;3. Image Generation &amp;amp; Upscaling&lt;span class="hx:absolute hx:-mt-20" id="3-image-generation--upscaling"&gt;&lt;/span&gt;
+&lt;a href="#3-image-generation--upscaling" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Image Generation (SDXL)&lt;span class="hx:absolute hx:-mt-20" id="image-generation-sdxl"&gt;&lt;/span&gt;
+&lt;a href="#image-generation-sdxl" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; stable-diffusion-webui
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3 launch.py --xformers&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3 launch.py --xformers&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -346,19 +346,19 @@ title="Copy code"
 &lt;li&gt;Select &lt;strong&gt;SDXL&lt;/strong&gt; checkpoint in WebUI.&lt;/li&gt;
 &lt;li&gt;Set &lt;strong&gt;device&lt;/strong&gt; to Intel GPU (OpenCL if supported).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Image Upscaling (Real-ESRGAN / SwinIR)&lt;span class="hx-absolute -hx-mt-20" id="image-upscaling-real-esrgan--swinir"&gt;&lt;/span&gt;
-&lt;a href="#image-upscaling-real-esrgan--swinir" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h3&gt;Image Upscaling (Real-ESRGAN / SwinIR)&lt;span class="hx:absolute hx:-mt-20" id="image-upscaling-real-esrgan--swinir"&gt;&lt;/span&gt;
+&lt;a href="#image-upscaling-real-esrgan--swinir" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/xinntao/Real-ESRGAN.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; Real-ESRGAN
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r requirements.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python inference_realesrgan.py -i input.png -o output.png -n RealESRGAN_x4plus&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python inference_realesrgan.py -i input.png -o output.png -n RealESRGAN_x4plus&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -367,69 +367,69 @@ title="Copy code"
 &lt;li&gt;For video frames: use &lt;strong&gt;EDVR&lt;/strong&gt; or &lt;strong&gt;Video2X&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2&gt;4. Video Generation (720p → 1080p/4K)&lt;span class="hx-absolute -hx-mt-20" id="4-video-generation-720p--1080p4k"&gt;&lt;/span&gt;
+&lt;h2&gt;4. Video Generation (720p → 1080p/4K)&lt;span class="hx:absolute hx:-mt-20" id="4-video-generation-720p--1080p4k"&gt;&lt;/span&gt;
 &lt;a href="#4-video-generation-720p--1080p4k" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Model:&lt;/strong&gt; Wan 2.1 (small/medium)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/Wan-Video/Wan2.1.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; Wan2.1
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r requirements.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Generate 720p clip&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python generate.py --resolution 720p --length &lt;span class="m"&gt;10&lt;/span&gt; --model medium&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python generate.py --resolution 720p --length &lt;span class="m"&gt;10&lt;/span&gt; --model medium&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h3&gt;Upscaling Video Frames&lt;span class="hx-absolute -hx-mt-20" id="upscaling-video-frames"&gt;&lt;/span&gt;
-&lt;a href="#upscaling-video-frames" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h3&gt;Upscaling Video Frames&lt;span class="hx:absolute hx:-mt-20" id="upscaling-video-frames"&gt;&lt;/span&gt;
+&lt;a href="#upscaling-video-frames" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/k4yt3x/video2x.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; video2x
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python video2x.py -i input.mp4 -o output.mp4 --upscaler realesrgan&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python video2x.py -i input.mp4 -o output.mp4 --upscaler realesrgan&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2&gt;5. Audio Generation&lt;span class="hx-absolute -hx-mt-20" id="5-audio-generation"&gt;&lt;/span&gt;
-&lt;a href="#5-audio-generation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Speech / Narration (Orpheus 3B)&lt;span class="hx-absolute -hx-mt-20" id="speech--narration-orpheus-3b"&gt;&lt;/span&gt;
-&lt;a href="#speech--narration-orpheus-3b" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h2&gt;5. Audio Generation&lt;span class="hx:absolute hx:-mt-20" id="5-audio-generation"&gt;&lt;/span&gt;
+&lt;a href="#5-audio-generation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Speech / Narration (Orpheus 3B)&lt;span class="hx:absolute hx:-mt-20" id="speech--narration-orpheus-3b"&gt;&lt;/span&gt;
+&lt;a href="#speech--narration-orpheus-3b" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/openai/orpheus.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; orpheus
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install -r requirements.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python tts.py --text &lt;span class="s2"&gt;&amp;#34;Hello, world&amp;#34;&lt;/span&gt; --output out.wav&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python tts.py --text &lt;span class="s2"&gt;&amp;#34;Hello, world&amp;#34;&lt;/span&gt; --output out.wav&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h3&gt;Music / SFX (MusicGen 1.5B)&lt;span class="hx-absolute -hx-mt-20" id="music--sfx-musicgen-15b"&gt;&lt;/span&gt;
-&lt;a href="#music--sfx-musicgen-15b" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h3&gt;Music / SFX (MusicGen 1.5B)&lt;span class="hx:absolute hx:-mt-20" id="music--sfx-musicgen-15b"&gt;&lt;/span&gt;
+&lt;a href="#music--sfx-musicgen-15b" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install musicgen
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;musicgen-cli --text &lt;span class="s2"&gt;&amp;#34;Epic cinematic music&amp;#34;&lt;/span&gt; --length &lt;span class="m"&gt;30&lt;/span&gt; --output music.wav&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;musicgen-cli --text &lt;span class="s2"&gt;&amp;#34;Epic cinematic music&amp;#34;&lt;/span&gt; --length &lt;span class="m"&gt;30&lt;/span&gt; --output music.wav&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -437,8 +437,8 @@ title="Copy code"
 &lt;p&gt;GPU acceleration via PyTorch + Intel OpenCL or &lt;code&gt;torch-directml&lt;/code&gt; if needed.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2&gt;6. WSL GPU Configuration Tips&lt;span class="hx-absolute -hx-mt-20" id="6-wsl-gpu-configuration-tips"&gt;&lt;/span&gt;
-&lt;a href="#6-wsl-gpu-configuration-tips" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h2&gt;6. WSL GPU Configuration Tips&lt;span class="hx:absolute hx:-mt-20" id="6-wsl-gpu-configuration-tips"&gt;&lt;/span&gt;
+&lt;a href="#6-wsl-gpu-configuration-tips" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Test GPU support in Python&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;torch&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;torch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;backends&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mps&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_available&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="c1"&gt;# For Apple GPUs&lt;/span&gt;
@@ -449,18 +449,18 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;torch_directml&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;dml&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;torch_directml&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;torch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tensor&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;2.0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dml&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;torch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tensor&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;2.0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dml&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2&gt;7. Workflow Summary&lt;span class="hx-absolute -hx-mt-20" id="7-workflow-summary"&gt;&lt;/span&gt;
+&lt;h2&gt;7. Workflow Summary&lt;span class="hx:absolute hx:-mt-20" id="7-workflow-summary"&gt;&lt;/span&gt;
 &lt;a href="#7-workflow-summary" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -504,25 +504,25 @@ title="Copy code"
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h2&gt;Next Steps&lt;span class="hx-absolute -hx-mt-20" id="next-steps"&gt;&lt;/span&gt;
+&lt;h2&gt;Next Steps&lt;span class="hx:absolute hx:-mt-20" id="next-steps"&gt;&lt;/span&gt;
 &lt;a href="#next-steps" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Test &lt;strong&gt;Ollama LLaMA 3 8B&lt;/strong&gt; first.&lt;/li&gt;
 &lt;li&gt;Install &lt;strong&gt;SDXL + Real-ESRGAN&lt;/strong&gt; for images.&lt;/li&gt;
 &lt;li&gt;Install &lt;strong&gt;Wan 2.1 + Video2X&lt;/strong&gt; for 30fps video generation/upscaling.&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/n8n_workflows/install_python_no_sudo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/n8n_workflows/install_python_no_sudo/</guid><description>
 &lt;h1&gt;install python without sudo&lt;/h1&gt;&lt;p&gt;restart install from local if needed&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
-&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rm -rf &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/python3.11&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rm -rf &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/python3.11&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir -p &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://www.openssl.org/source/&lt;/span&gt;
@@ -531,17 +531,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; openssl-3.5.2
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./config --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl --openssldir&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://sourceware.org/libffi/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://github.com/libffi/libffi/releases/download/v3.4.5/libffi-3.4.5.tar.gz
@@ -549,17 +549,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; libffi-3.4.5
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/libffi
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# https://github.com/madler/zlib/releases&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz
@@ -567,17 +567,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; zlib-1.3.1
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/zlib
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tar -xvf Python-3.11.0.tgz
@@ -593,60 +593,60 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;if you don&amp;rsquo;t need to pre-install openssl, libffi, zlib, you can simplify to:&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz&lt;span class="p"&gt;;&lt;/span&gt; tar -xvf Python-3.11.0.tgz&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; Python-3.11.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/python3.11 --enable-optimizations&lt;span class="p"&gt;;&lt;/span&gt; make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; make install
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;code&gt;--prefix=$HOME/local/python3.11&lt;/code&gt; tells the build system to install everything there. After &lt;code&gt;make install&lt;/code&gt;, the Python binaries, libraries, and headers are copied into that directory.&lt;/p&gt;
 &lt;p&gt;You can safely delete the tarball (Python-3.11.0.tgz) and the extracted source folder (Python-3.11.0) after make install completes. The installed Python does not depend on the source folder—it’s fully installed in &lt;code&gt;$HOME/local/python3.11&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Your one-liner &lt;code&gt;echo 'export PATH=…' &amp;gt;&amp;gt; ~/.bashrc &amp;amp;&amp;amp; source ~/.bashrc&lt;/code&gt; ensures your shell sees this new Python immediately.&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3 --version
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;python3 -m venv venv
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; venv/bin/activate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; venv/bin/activate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install --upgrade pip
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install numpy&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install numpy&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h2&gt;ssl module not found&lt;span class="hx-absolute -hx-mt-20" id="ssl-module-not-found"&gt;&lt;/span&gt;
-&lt;a href="#ssl-module-not-found" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;h2&gt;ssl module not found&lt;span class="hx:absolute hx:-mt-20" id="ssl-module-not-found"&gt;&lt;/span&gt;
+&lt;a href="#ssl-module-not-found" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl-3.5.2
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make clean
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
@@ -663,17 +663,17 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make install
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Verify shared libraries were created&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ls -la &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl/lib/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ls -la &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl/lib/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tar -xvf Python-3.11.0.tgz
@@ -698,34 +698,34 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Add both PATH and LD_LIBRARY_PATH to bashrc&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;#34;$HOME/local/python3.11/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export LD_LIBRARY_PATH=&amp;#34;$HOME/local/openssl/lib:$HOME/local/libffi/lib:$HOME/local/zlib/lib:$LD_LIBRARY_PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Perfect! The OpenSSL shared libraries are there in lib64. Now let&amp;rsquo;s create the symlink and rebuild Python with the correct paths:
 bash# Create a symlink from lib to lib64&lt;/p&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ln -sf lib64 lib
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Verify the symlink works&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ls -la &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl/lib/*.so*&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ls -la &lt;span class="nv"&gt;$HOME&lt;/span&gt;/local/openssl/lib/*.so*&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/Python-3.11.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make clean
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
@@ -745,25 +745,25 @@ title="Copy code"
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; -Wl,-rpath,&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/local/zlib/lib&amp;#34;&lt;/span&gt; &lt;span class="se"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="se"&gt;&lt;/span&gt; &lt;span class="nv"&gt;LIBS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;-lssl -lcrypto&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;make -j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code"&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export LD_LIBRARY_PATH=&amp;#34;$HOME/local/openssl/lib64:$HOME/local/libffi/lib:$HOME/local/zlib/lib:$LD_LIBRARY_PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
 &lt;button
-class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
 &gt;
-&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
-&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/n8n_workflows/tmp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/n8n_workflows/tmp/</guid><description>
@@ -805,7 +805,7 @@ title="Copy code"
 &lt;p&gt;Scheduling / automation for regular posting&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Open-Source AI Content Workflow Roadmap&lt;/h1&gt;&lt;h2&gt;1. Content Generation (Text &amp;amp; SEO/Keywords)&lt;span class="hx-absolute -hx-mt-20" id="1-content-generation-text--seokeywords"&gt;&lt;/span&gt;
+&lt;h1&gt;Open-Source AI Content Workflow Roadmap&lt;/h1&gt;&lt;h2&gt;1. Content Generation (Text &amp;amp; SEO/Keywords)&lt;span class="hx:absolute hx:-mt-20" id="1-content-generation-text--seokeywords"&gt;&lt;/span&gt;
 &lt;a href="#1-content-generation-text--seokeywords" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Generate platform-specific posts with relevant keywords, hashtags, CTAs, and emojis.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -830,7 +830,7 @@ title="Copy code"
 &lt;li&gt;Append hashtags/emoji/CTA using a post-processing script.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2&gt;2. Multimedia Generation (Images, Video, Voice)&lt;span class="hx-absolute -hx-mt-20" id="2-multimedia-generation-images-video-voice"&gt;&lt;/span&gt;
+&lt;h2&gt;2. Multimedia Generation (Images, Video, Voice)&lt;span class="hx:absolute hx:-mt-20" id="2-multimedia-generation-images-video-voice"&gt;&lt;/span&gt;
 &lt;a href="#2-multimedia-generation-images-video-voice" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Generate videos with narration and optionally stylized visuals.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -849,7 +849,7 @@ title="Copy code"
 &lt;li&gt;Combine video + audio into final output.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2&gt;3. Platform Formatting &amp;amp; Optimization&lt;span class="hx-absolute -hx-mt-20" id="3-platform-formatting--optimization"&gt;&lt;/span&gt;
+&lt;h2&gt;3. Platform Formatting &amp;amp; Optimization&lt;span class="hx:absolute hx:-mt-20" id="3-platform-formatting--optimization"&gt;&lt;/span&gt;
 &lt;a href="#3-platform-formatting--optimization" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Ensure content meets platform-specific requirements (character limits, hashtags, emojis, video length).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -863,7 +863,7 @@ title="Copy code"
 &lt;li&gt;Optional: LangChain rules or templates to automate this in generation stage&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2&gt;4. Cross-Platform Publishing&lt;span class="hx-absolute -hx-mt-20" id="4-cross-platform-publishing"&gt;&lt;/span&gt;
+&lt;h2&gt;4. Cross-Platform Publishing&lt;span class="hx:absolute hx:-mt-20" id="4-cross-platform-publishing"&gt;&lt;/span&gt;
 &lt;a href="#4-cross-platform-publishing" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Automatically post content to multiple social networks.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -881,7 +881,7 @@ title="Copy code"
 &lt;li&gt;Log post ID &amp;amp; timestamp for tracking.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2&gt;5. Approval / Human-in-the-loop Workflow&lt;span class="hx-absolute -hx-mt-20" id="5-approval--human-in-the-loop-workflow"&gt;&lt;/span&gt;
+&lt;h2&gt;5. Approval / Human-in-the-loop Workflow&lt;span class="hx:absolute hx:-mt-20" id="5-approval--human-in-the-loop-workflow"&gt;&lt;/span&gt;
 &lt;a href="#5-approval--human-in-the-loop-workflow" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Optional human review before posting.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -897,7 +897,7 @@ title="Copy code"
 &lt;li&gt;Reviewer approves → triggers publishing scripts.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2&gt;6. Analytics &amp;amp; Feedback Loop&lt;span class="hx-absolute -hx-mt-20" id="6-analytics--feedback-loop"&gt;&lt;/span&gt;
+&lt;h2&gt;6. Analytics &amp;amp; Feedback Loop&lt;span class="hx:absolute hx:-mt-20" id="6-analytics--feedback-loop"&gt;&lt;/span&gt;
 &lt;a href="#6-analytics--feedback-loop" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Track engagement, optimize future posts.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -913,7 +913,7 @@ title="Copy code"
 &lt;li&gt;Adjust LLaMA prompts for better engagement (keywords, tone, style).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2&gt;7. End-to-End Automation&lt;span class="hx-absolute -hx-mt-20" id="7-end-to-end-automation"&gt;&lt;/span&gt;
+&lt;h2&gt;7. End-to-End Automation&lt;span class="hx:absolute hx:-mt-20" id="7-end-to-end-automation"&gt;&lt;/span&gt;
 &lt;a href="#7-end-to-end-automation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Full workflow from content generation → approval → publishing → analytics.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tools &amp;amp; Libraries:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -926,7 +926,7 @@ title="Copy code"
 &lt;li&gt;Keyword Discovery → Content Generation → Multimedia Generation → Formatting → Approval → Posting → Analytics&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2&gt;Key Gaps Filled by Open-Source Tools&lt;span class="hx-absolute -hx-mt-20" id="key-gaps-filled-by-open-source-tools"&gt;&lt;/span&gt;
+&lt;h2&gt;Key Gaps Filled by Open-Source Tools&lt;span class="hx:absolute hx:-mt-20" id="key-gaps-filled-by-open-source-tools"&gt;&lt;/span&gt;
 &lt;a href="#key-gaps-filled-by-open-source-tools" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Keywords / Trends:&lt;/strong&gt; pytrends, SERPAPI&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cross-platform posting:&lt;/strong&gt; Tweepy, instagrapi, TikTok-Api&lt;/li&gt;
@@ -935,7 +935,7 @@ title="Copy code"
 &lt;li&gt;&lt;strong&gt;Scheduling / Automation:&lt;/strong&gt; Airflow, Prefect, Cron&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Media suggestions:&lt;/strong&gt; CLIP similarity for images/videos&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre class="mermaid hx-mt-6"&gt;
+&lt;pre class="mermaid hx:mt-6"&gt;
 flowchart TD
 %% Stage 1: Keyword &amp;amp; Trend Discovery
 A[Keyword &amp;amp; Trend Discovery] --&amp;gt; B[Content Generation]
@@ -994,12 +994,12 @@ end
 %% Loop for optimization
 H --&amp;gt; B
 &lt;/pre&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/n8n_workflows/wsl_intel_arc_gpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/n8n_workflows/wsl_intel_arc_gpu/</guid><description>
-&lt;p&gt;&lt;a href="https://intel.github.io/intel-extension-for-tensorflow/latest/docs/install/experimental/install_for_arc_gpu.html" target="_blank" rel="noopener"&gt;https://intel.github.io/intel-extension-for-tensorflow/latest/docs/install/experimental/install_for_arc_gpu.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://intel.github.io/intel-extension-for-tensorflow/latest/docs/install/experimental/install_for_arc_gpu.html"target="_blank" rel="noopener"&gt;https://intel.github.io/intel-extension-for-tensorflow/latest/docs/install/experimental/install_for_arc_gpu.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;sudo apt update&lt;/p&gt;
 &lt;p&gt;sudo apt-get install -y gpg-agent wget
-wget -qO - &lt;a href="https://repositories.intel.com/gpu/intel-graphics.key" target="_blank" rel="noopener"&gt;https://repositories.intel.com/gpu/intel-graphics.key&lt;/a&gt; |
+wget -qO - &lt;a href="https://repositories.intel.com/gpu/intel-graphics.key"target="_blank" rel="noopener"&gt;https://repositories.intel.com/gpu/intel-graphics.key&lt;/a&gt; |
 sudo gpg &amp;ndash;dearmor &amp;ndash;output /usr/share/keyrings/intel-graphics.gpg
-echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/intel-graphics.gpg] &lt;a href="https://repositories.intel.com/gpu/ubuntu" target="_blank" rel="noopener"&gt;https://repositories.intel.com/gpu/ubuntu&lt;/a&gt; jammy/lts/2350 unified&amp;rdquo; | sudo tee /etc/apt/sources.list.d/intel-gpu-jammy.list
+echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/intel-graphics.gpg] &lt;a href="https://repositories.intel.com/gpu/ubuntu"target="_blank" rel="noopener"&gt;https://repositories.intel.com/gpu/ubuntu&lt;/a&gt; jammy/lts/2350 unified&amp;rdquo; | sudo tee /etc/apt/sources.list.d/intel-gpu-jammy.list
 sudo apt-get update&lt;/p&gt;
 &lt;p&gt;sudo apt-get update&lt;/p&gt;
 &lt;p&gt;sudo apt-get install &lt;br&gt;
@@ -1010,8 +1010,8 @@ level-zero &lt;br&gt;
 libigc1 &lt;br&gt;
 libigdfcl1 &lt;br&gt;
 libigdgmm12&lt;/p&gt;
-&lt;p&gt;wget -O- &lt;a href="https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB" target="_blank" rel="noopener"&gt;https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB&lt;/a&gt; | sudo gpg &amp;ndash;dearmor &amp;ndash;output /usr/share/keyrings/oneapi-archive-keyring.gpg
-echo &amp;ldquo;deb [signed-by=/usr/share/keyrings/oneapi-archive-keyring.gpg] &lt;a href="https://apt.repos.intel.com/oneapi" target="_blank" rel="noopener"&gt;https://apt.repos.intel.com/oneapi&lt;/a&gt; all main&amp;rdquo; | sudo tee /etc/apt/sources.list.d/oneAPI.list
+&lt;p&gt;wget -O- &lt;a href="https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB"target="_blank" rel="noopener"&gt;https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB&lt;/a&gt; | sudo gpg &amp;ndash;dearmor &amp;ndash;output /usr/share/keyrings/oneapi-archive-keyring.gpg
+echo &amp;ldquo;deb [signed-by=/usr/share/keyrings/oneapi-archive-keyring.gpg] &lt;a href="https://apt.repos.intel.com/oneapi"target="_blank" rel="noopener"&gt;https://apt.repos.intel.com/oneapi&lt;/a&gt; all main&amp;rdquo; | sudo tee /etc/apt/sources.list.d/oneAPI.list
 sudo apt-get update&lt;/p&gt;
 &lt;p&gt;sudo apt-get install intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-mkl&lt;/p&gt;
 &lt;p&gt;sudo apt-get install -y clinfo python3-pip intel-oneapi-gpu intel-opencl-runtime&lt;/p&gt;
