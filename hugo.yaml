@@ -8,11 +8,17 @@ module:
     - path: github.com/imfing/hextra
 
 markup:
-  # allow raw html
   goldmark:
+    # Add passthrough extension for LaTeX math expressions
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true
+    # allow raw html
     renderer:
       unsafe: true
-      
 
   # enable hextra syntax highlight
   highlight:
@@ -51,3 +57,7 @@ params:
   editURL:
     enable: true
     base: "https://github.com/gndpwnd/research/edit/main/content"
+
+  # Enable math rendering using Hextra's built-in support
+  math:
+    engine: mathjax
