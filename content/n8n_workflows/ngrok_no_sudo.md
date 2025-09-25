@@ -2,7 +2,12 @@
 
 This guide shows how to install ngrok locally (no sudo), use your free developer domain, and manage multiple apps on different ports using random subdomains.
 
+⚠️ Free Plan Caveat: On the free plan, each reserved static domain can only be used by one machine and one app at a time. To run multiple apps on different ports from the same machine, you must use random subdomains, which are temporary and change each time ngrok starts. Only one reserved domain tunnel can be active at a time.
+
+Random subdomains do not work without autentication, authentication on free plane only works for one free dev domain.
+
 > https://ngrok.com/docs/guides/device-gateway/linux/
+
 
 ## Table of Contents
 
@@ -264,23 +269,34 @@ Here’s a concise guide for running **ngrok in the background** on Linux/macOS:
 
 ---
 
+Here’s the **fully updated version** of your “Run ngrok in the background” section, with proper logging that captures the forwarding URL:
+
+---
+
 ## Run ngrok in the background
 
-Use `nohup` or `&` to detach it from your terminal:
+Use `nohup` or `&` to detach it from your terminal and capture logs:
 
 ```bash
-# Run a tunnel to port 8080 in the background
-nohup ngrok http 8080 &
+# Create log directory
+mkdir -p ~/logs/ngrok/
+
+# Run ngrok in the background with proper logging
+nohup ngrok http 8000 \
+    --log ~/logs/ngrok/ngrok_8000.log \
+    >> ~/logs/ngrok/ngrok_stdout_8000.log \
+    2>> ~/logs/ngrok/ngrok_stderr_8000.log &
 ```
 
-* `nohup` → ignores hangups, keeps process running after you close the terminal
-* `&` → runs the command in the background
-* Output is saved to `nohup.out` by default
+* `ngrok_8000.log` → contains the forwarding URL and ngrok internal logs
+* `ngrok_stdout_8000.log` → stdout (additional messages)
+* `ngrok_stderr_8000.log` → errors
+* `nohup` + `&` → keeps it running after the terminal closes
 
-You can also redirect logs:
+You can **follow the forwarding URL** immediately:
 
 ```bash
-nohup ngrok http 8080 > ngrok.log 2>&1 &
+tail -f ~/logs/ngrok/ngrok_8000.log
 ```
 
 ---
@@ -289,6 +305,12 @@ nohup ngrok http 8080 > ngrok.log 2>&1 &
 
 ```bash
 ps aux | grep ngrok
+```
+
+💡 Optional: Quickly see which port and subdomain each process is using by checking the logs:
+
+```bash
+grep "Forwarding" ~/logs/ngrok/ngrok_8000.log
 ```
 
 ---
@@ -301,7 +323,7 @@ ps aux | grep ngrok
 ps aux | grep ngrok
 ```
 
-2. Kill the process:
+2. Kill the process gracefully:
 
 ```bash
 kill <PID>
@@ -318,17 +340,9 @@ kill -9 <PID>
 ### Optional: Use `disown`
 
 ```bash
-ngrok http 8080 &
+ngrok http 8080 & 
 disown
 ```
 
 * Detaches the process from the shell
 * Keeps it running even after logging out
-
----
-
-This lets you keep ngrok tunnels active without keeping a terminal open.
-
----
-
-If you want, I can make a **one-line workflow** for running **multiple ngrok tunnels in the background** for different apps and ports.
