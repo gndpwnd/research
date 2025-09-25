@@ -18,6 +18,8 @@ toc: false
 
   {{< card link="basset_hound" title="Basset Hound - OSINT" icon="book-open" >}}
 
+  {{< card link="n8n_workflows" title="N8N Workflows" icon="book-open" >}}
+
   {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}
 
