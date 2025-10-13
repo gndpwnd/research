@@ -1,1 +1,1471 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research Projects – About IMASS - LLM-Enhanced Cyber-Resilient Design</title><link>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/</link><description>Recent content in About IMASS - LLM-Enhanced Cyber-Resilient Design on Research Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research Projects – About IMASS - LLM-Enhanced Cyber-Resilient Design</title><link>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/</link><description>Recent content in About IMASS - LLM-Enhanced Cyber-Resilient Design on Research Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/swarm_c2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/swarm_c2-1/</guid><description>
+&lt;p&gt;i am wanting to better understand drone swarm communication theory and control theory. I have the following ideas for controlling a drone swarm, maintaining communication integrity in high volume communication environments. I am wondering if using lattices will help with scaling and i can simply augment the existing behaviour control with the ideas of using hexagonal lattices for ideal communication configurations. then using the propposed SYN ACK architecture and commands ID and timestamps and message queues for simplifying communication, an application would be for helping GPS denied drones become unstuck, and communicating effectively. don&amp;rsquo;t worry about the methods for detecting GPS denial or recovery&lt;/p&gt;
+&lt;p&gt;Thanks for the detailed overview and code context. To make the research most relevant, could you please confirm the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;What specific communication protocol are your real-world or simulated drones using (e.g., ESP-NOW, LoRa, nRF24, custom radio)?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is your main objective now to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add lattice-based hexagonal formation control to your existing Swarm Squad behavior/formation controllers?&lt;/li&gt;
+&lt;li&gt;Improve the reliability and security of swarm communication (or both)?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Are you also looking for recommendations on how to implement decentralized consensus or lightweight blockchain-style communication protocols within your swarm?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will help guide whether the focus is mostly on control theory implementation, scalable comms architecture, or security/integrity systems.&lt;/p&gt;
+&lt;p&gt;This will help guide whether the focus is mostly on control theory implementation, scalable comms architecture, or security/integrity systems.&lt;/p&gt;
+&lt;p&gt;To help you best, could you please confirm a few things:&lt;/p&gt;
+&lt;p&gt;What communication protocol(s) are your drones using or expected to use (e.g., ESP-NOW, LoRa, nRF24, custom radio)?&lt;/p&gt;
+&lt;p&gt;Are you primarily focused on:&lt;/p&gt;
+&lt;p&gt;(A) Enhancing control theory: specifically adding hexagonal lattice-based formation control to Swarm Squad?&lt;/p&gt;
+&lt;p&gt;(B) Improving communication reliability and security in the swarm?&lt;/p&gt;
+&lt;p&gt;(C) Both control and communication together?&lt;/p&gt;
+&lt;p&gt;Would you like implementation guidance on decentralized consensus or lightweight blockchain-like mechanisms for coordination or authentication in the swarm?&lt;/p&gt;
+&lt;p&gt;Once I have this, I can tailor the research and integration strategy accordingly.&lt;/p&gt;
+&lt;p&gt;Just think of it as custom radios for now. i need high level theory for now that i can implement later.&lt;/p&gt;
+&lt;p&gt;my main objectives are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;being able to scale swarm formation control to assist LLM with command and control, so that the LLM is not overwhelmed with complex math operations. Each drone can be made aware of how it is supposed to fit into the swarm. I am wondering how i can expand on the existing swarm formation controller system i have, i already have a way to get an optimal formation, but not exactly a way to scale it.&lt;/li&gt;
+&lt;li&gt;be able to reduce volume of radio communication between drones and maintaint communication integrity and mitigate the main cybersecurity issues found in drone swarms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am wondering if lightweight blockchain style communication would be effective for bridging security and performance. I dont need recommendations on implementation, jsut idease for what types of systems to use and how they might be used.&lt;/p&gt;
+&lt;p&gt;again i want high level theoretical overviews. I will worry about implementation.&lt;/p&gt;
+&lt;p&gt;Great — I’ll put together a high-level theoretical overview of:&lt;/p&gt;
+&lt;p&gt;Scalable hexagonal lattice-based swarm formation theory that offloads computation from a central LLM and empowers local agents.&lt;/p&gt;
+&lt;p&gt;Communication theory for minimizing radio volume while maintaining message integrity and command propagation.&lt;/p&gt;
+&lt;p&gt;How lightweight blockchain-like systems could conceptually support swarm communication integrity, authentication, and fault tolerance.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll focus on concepts you can later implement in your custom swarm simulation or real-world control stack. I&amp;rsquo;ll notify you as soon as it&amp;rsquo;s ready.&lt;/p&gt;
+&lt;p&gt;Great — I’ll put together a high-level theoretical overview of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Scalable hexagonal lattice-based swarm formation theory that offloads computation from a central LLM and empowers local agents.&lt;/li&gt;
+&lt;li&gt;Communication theory for minimizing radio volume while maintaining message integrity and command propagation.&lt;/li&gt;
+&lt;li&gt;How lightweight blockchain-like systems could conceptually support swarm communication integrity, authentication, and fault tolerance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I&amp;rsquo;ll focus on concepts you can later implement in your custom swarm simulation or real-world control stack. I&amp;rsquo;ll notify you as soon as it&amp;rsquo;s ready.&lt;/p&gt;
+&lt;p&gt;Decentralized Drone Swarm Coordination: Formation, Communication, and Trust
+Scalable Hexagonal Formation Control&lt;/p&gt;
+&lt;p&gt;A hexagonal (honeycomb) lattice is ideal for large-area coverage with minimal agents: it covers an area with the fewest drones and still yields a bounded communication “stretch” between neighbors
+dl.icdst.org
+. In practice, one can designate a reference frame or leader as the origin of a hex grid. Each drone is assigned a unique lattice coordinate (e.g. using an axial or cube hex‐coordinate system) so it “knows” its target slot in the pattern relative to the leader. In a fully distributed setup, neighbors can measure relative distances (by radio ranging, vision, or local sensors) to infer their own coordinates and align on the lattice without GPS. Indeed, experiments show that if a leader hovers at the lattice center and others follow simple local force‐based rules, the swarm self-organizes into a near-perfect hex formation over a large area
+cris.vtt.fi
+.&lt;/p&gt;
+&lt;p&gt;Key features of this approach are:&lt;/p&gt;
+&lt;p&gt;Local positioning: Drones use neighbor geometry (angles/distances) to settle on lattice vertices; global GPS is not required. Each drone only needs local neighbor info to compute its offset on the hex grid, preserving decentralization
+dl.icdst.org
+.&lt;/p&gt;
+&lt;p&gt;Scalability: The hex grid naturally scales by extending rings of cells. New drones can take the next available lattice coordinates. Because coverage density depends only on local spacing, adding more drones simply fills larger lattice rings around the leader.&lt;/p&gt;
+&lt;p&gt;Failure recovery: If a drone drops out or is lost, neighboring drones detect a “hole” (missing expected neighbor). They can locally reassign coordinates or shift positions. For example, a simple distributed rule can pull adjacent drones inward or fill the gap, then propagate adjustments outward. Prior work on self-organizing hex lattices even includes local error-detection/correction routines: if a node is missing or misaligned, neighbors adjust using virtual forces to restore the lattice
+dl.icdst.org
+dl.icdst.org
+.&lt;/p&gt;
+&lt;p&gt;Robustness without GPS: In GPS-denied settings, drones rely on inter-robot sensing (vision, UWB, or LiDAR) and short-range comms. Each drone can maintain a local coordinate frame (rotated/translated) anchored on the leader or on a cluster-head. By sharing minimal relative offset updates, the swarm preserves the global lattice structure even when absolute position is unknown.&lt;/p&gt;
+&lt;p&gt;In summary, a hex-lattice formation can be maintained by purely local, distributed rules. No central controller is needed – each drone simply computes its “lattice index” and neighbors’ positions, then moves into the nearest vacant slot. This yields full coverage with minimal agents and naturally handles failures: missing nodes create local gaps that trigger self-healing movement. All underlying control laws can be simple (e.g. attractive/repulsive virtual forces) and only use neighbor distances, as demonstrated by distributed hex-lattice algorithms
+dl.icdst.org
+dl.icdst.org
+.&lt;/p&gt;
+&lt;p&gt;Low-Overhead Swarm Communication&lt;/p&gt;
+&lt;p&gt;To reduce radio chatter while keeping commands reliable, the swarm can adopt flooding control and aggregation strategies:&lt;/p&gt;
+&lt;p&gt;Message ID &amp;amp; de-duplication: Every broadcast message carries a unique CMD_ID (and origin ID). Drones cache recent message IDs and discard duplicates, so that forwarding loops are prevented. Each node only rebroadcasts a given message once, dramatically cutting redundant transmissions.&lt;/p&gt;
+&lt;p&gt;Gossip protocols: Instead of full flooding, use gossip or epidemic broadcasting: each drone randomly forwards new messages to a subset of neighbors, who in turn forward further. This probabilistic spread still reaches the whole swarm with high probability, but uses far fewer transmissions. In practice, gossiping plus local conflict-resolution (each node decides when to rebroadcast based on a timestamp or conflict rules) leads to eventual consistency of shared data across the swarm
+frontiersin.org
+.&lt;/p&gt;
+&lt;p&gt;Acknowledgement aggregation: For critical commands, instead of each drone ACK-ing individually, nodes can form a logical spanning tree or clusters. Leaf drones send ACKs up the tree or to cluster-heads, which combine them (e.g. by bitmask or count) and forward a single aggregated ACK upward. This “ACK compression” reduces uplink traffic. Similarly, negative ACKs (NACKs) can be used: if a drone misses a command, it broadcasts a NACK for that command ID, prompting neighbors to retransmit only what’s missing. NACK-based error recovery avoids rebroadcasting every packet.&lt;/p&gt;
+&lt;p&gt;Cluster and mesh topologies: Organize the swarm into clusters (either static or dynamic). Within each cluster, nodes use a local broadcast (or a small spanning tree) to communicate, and one leader or cluster-head relays information across clusters. Clustering limits the radio range needed and confines much traffic to within each group. Mesh networks with multi-hop routing (or overlay networks) can also be used: commands propagate by local routing decisions rather than global broadcasts.&lt;/p&gt;
+&lt;p&gt;These strategies preserve message integrity (every drone eventually gets each command once) while keeping volume low. For example, Buzz-based swarms use a “virtual stigmergy” table and gossip: each robot only forwards state updates when needed, so the swarm quickly converges on shared data without every node rebroadcasting everything
+frontiersin.org
+. In essence, by tracking message IDs and sender info, a drone stops retransmitting duplicates, and acknowledgement schemes ensure reliability through compact feedback rather than flooding.&lt;/p&gt;
+&lt;p&gt;Blockchain-inspired Secure Swarm Coordination&lt;/p&gt;
+&lt;p&gt;Decentralized ledger concepts can add trust without a heavyweight blockchain. In a swarm, each message or command can be logged and authenticated in a tamper-evident way:&lt;/p&gt;
+&lt;p&gt;Authenticated message history: Each message carries a chain of signatures or a reference to a common ledger. A lightweight DAG (Directed Acyclic Graph) structure – like IOTA’s Tangle – can record each command as a vertex, with edges linking to previous messages. Because every drone shares and validates this DAG, they can check that any received command fits the agreed-upon history. Unlike a full blockchain, a DAG or log can be append-only without heavy mining. Recent work notes that DAG-based ledgers offer the security of blockchains but with much lower overhead for IoT-like systems
+researchgate.net
+.&lt;/p&gt;
+&lt;p&gt;Decentralized trust: Instead of trusting a central authority, drones collectively verify commands. For example, when the leader issues a mission command, it signs it and emits it into the swarm ledger. Other drones relay and record it; if later commands conflict, the history shows the valid order. Each drone can cryptographically verify message signatures on the fly. Permissioned blockchains or DAGs in prior studies show how unmanned systems can remove single points of failure by having each node validate events in a shared log
+mdpi.com
+.&lt;/p&gt;
+&lt;p&gt;Handling compromised drones: If some drones are corrupted, they can be detected by the consensus rules in the log. For example, threshold cryptography can require that a group of drones must jointly “sign” certain critical updates. Unless more than a threshold are compromised, malicious nodes cannot forge valid commands. The surveyed literature points out that combining DAG/blockchain trust models with threshold signatures greatly improves resilience: a subset of honest drones can cooperatively authorize keys or commands
+mdpi.com
+. In practice, this means no single drone can unilaterally inject false orders into the swarm.&lt;/p&gt;
+&lt;p&gt;Lightweight alternatives: The swarm does not need Bitcoin-style blockchains. Even a simple append-only log with a hash chain, stored redundantly on many drones, can serve as a trusted record. Drones periodically share hashes of their logs to stay in sync. Or a DAG-based authentication scheme lets each drone attach a signature to every broadcast it sees, creating a web of trust without mining. Both approaches maintain the spirit of blockchain’s immutability and audit trail, but in a resource-light form suitable for drones (small messages, no proof-of-work).&lt;/p&gt;
+&lt;p&gt;In combination, these ideas form a resilient decentralized system: formation patterns emerge from local rules (hexagon grids with coordinate indexing), communication is minimized by smart flooding controls, and security is assured by distributed ledgers and cryptography rather than a central controller. Each layer—formation logic, network protocol, and trust framework—works locally yet cohesively to keep the swarm synchronized, efficient, and robust against failures or attacks
+dl.icdst.org
+mdpi.com
+.&lt;/p&gt;
+&lt;p&gt;Sources: Concepts adapted from swarm robotics literature on hexagonal formations
+dl.icdst.org
+dl.icdst.org
+, broadcast/gossip communication protocols
+frontiersin.org
+, and recent surveys of blockchain/DAG trust mechanisms in UAV swarms
+researchgate.net
+mdpi.com
+.&lt;/p&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/swarm_comms1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/swarm_comms1/</guid><description>
+&lt;p&gt;I am running into a communication issue in my drone swarm. I basically need to keep track of what drones have recieved what radio communication without double-upping or repeating the signal and the recieving drones repeating the command without verifying it is indeed a new command. should i strucutre my communication to have a CMD_ID to keep track of the command number since swarm/program startup? or is there a better method?&lt;/p&gt;
+&lt;p&gt;That’s an excellent question — and a common challenge in swarm communications. You’re thinking in the right direction with a &lt;code&gt;CMD_ID&lt;/code&gt;, but the most robust systems usually combine &lt;strong&gt;unique command identifiers&lt;/strong&gt; with &lt;strong&gt;sender and timestamp or sequence tracking&lt;/strong&gt;. Here’s how you can structure it for reliability and simplicity:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;🧠 Core Concept&lt;span class="hx:absolute hx:-mt-20" id="-core-concept"&gt;&lt;/span&gt;
+&lt;a href="#-core-concept" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Each message (command or data packet) should have a &lt;strong&gt;unique signature&lt;/strong&gt; that lets every drone decide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Have I already seen this message?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Is this message newer or more relevant than what I already processed?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3&gt;✅ Recommended Message Structure&lt;span class="hx:absolute hx:-mt-20" id="-recommended-message-structure"&gt;&lt;/span&gt;
+&lt;a href="#-recommended-message-structure" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Example message header:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; CMD_ID: uint32, // monotonically increasing command number
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; SENDER_ID: uint8, // unique drone ID or controller ID
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TIMESTAMP: uint32, // optional, ms since system start
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; CHECKSUM: uint16, // optional CRC for data integrity
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; PAYLOAD: {...} // actual command/data
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;🕹️ Handling Logic (Per Drone)&lt;span class="hx:absolute hx:-mt-20" id="-handling-logic-per-drone"&gt;&lt;/span&gt;
+&lt;a href="#-handling-logic-per-drone" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Each drone keeps a &lt;strong&gt;history table or small cache&lt;/strong&gt; of recently seen messages:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;(received_from, CMD_ID)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;When a message is received:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Check if &lt;code&gt;(SENDER_ID, CMD_ID)&lt;/code&gt; exists in the cache.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ If &lt;strong&gt;not found&lt;/strong&gt;, process it and broadcast it onward.&lt;/li&gt;
+&lt;li&gt;🚫 If &lt;strong&gt;found&lt;/strong&gt;, ignore (duplicate).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optionally, purge old entries after some time to save memory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3&gt;🧩 Alternative / Enhancement Options&lt;span class="hx:absolute hx:-mt-20" id="-alternative--enhancement-options"&gt;&lt;/span&gt;
+&lt;a href="#-alternative--enhancement-options" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Monotonic Sequence Per Source:&lt;/strong&gt;
+Each sender increments its own sequence number. Receiver only accepts a message if its sequence number is greater than the last one seen from that sender.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hash-based De-duplication:&lt;/strong&gt;
+Use a lightweight hash (e.g., CRC16 or MurmurHash) of the message contents; store those hashes temporarily to detect repeats even if &lt;code&gt;CMD_ID&lt;/code&gt; is missing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Timestamp Verification:&lt;/strong&gt;
+Useful if commands may arrive out of order or from relays. Each drone compares timestamps to decide if a message is newer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;🛰️ Practical Example&lt;span class="hx:absolute hx:-mt-20" id="-practical-example"&gt;&lt;/span&gt;
+&lt;a href="#-practical-example" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;For a swarm of 20 drones and one controller:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Controller sends &lt;code&gt;CMD_ID=1542&lt;/code&gt; to all drones.&lt;/li&gt;
+&lt;li&gt;Drone #3 relays it to others with the same &lt;code&gt;CMD_ID&lt;/code&gt; and its &lt;code&gt;SENDER_ID&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Drones ignore any message with &lt;code&gt;(CMD_ID=1542)&lt;/code&gt; already seen, even if relayed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This way, you avoid echo storms, ensure one-time command propagation, and keep the system scalable.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If you tell me what communication protocol you’re using (e.g., LoRa, nRF24, ESP-NOW, etc.) or whether the swarm is &lt;strong&gt;mesh-based&lt;/strong&gt; or &lt;strong&gt;hub-spoke&lt;/strong&gt;, I can tailor the best caching or acknowledgment scheme for your setup.&lt;/p&gt;
+&lt;p&gt;A steadily increasing &lt;code&gt;CMD_ID&lt;/code&gt; per sender is a good start—it gives every message a simple, unique label—but to make the system robust you’ll usually combine it with a sender ID and a small record of what’s already been seen. A simple pattern that works well in swarms looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Message header&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;{
+CMD_ID: uint32, // incremented each time this sender issues a command
+SENDER_ID: uint8, // unique ID for each drone or the controller
+TIMESTAMP: uint32, // optional, for age comparisons
+PAYLOAD: ...
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Receiver logic&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Keep a short table (or ring buffer) of &lt;code&gt;(SENDER_ID, CMD_ID)&lt;/code&gt; pairs recently processed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When a packet arrives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If that pair is new → act on it and rebroadcast if needed.&lt;/li&gt;
+&lt;li&gt;If it’s already in the table → drop it (duplicate).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optionally drop very old entries to save memory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This way each drone forwards a command only once and ignores repeats, even if other drones relay it.
+You can add a checksum for integrity, or use timestamps if messages might arrive out of order.&lt;/p&gt;
+&lt;p&gt;If you tell me whether you’re using a mesh protocol (LoRa, ESP-NOW, NRF24, etc.) or a hub-and-spoke setup, I can suggest details like cache size and acknowledgment strategy.&lt;/p&gt;
+&lt;p&gt;ok, what about encryption? i wold like to be able to encrypt data along the lines of how ssh does it. or what would be the best for performance ans what would be the best for security, especially in environments with high volumes of messages. would syncronous or async encryption be best? because also i would like to store keys on a drone, but if a drone crashes, i dont want to be able to encrypt every single message in my network&amp;hellip; what about decentralized communication, almost like the blockchain? how could this work. then i would want to be able to have simple ACK so that i am not spamming the same message over and over again. almost like having a list messages currently going out, then adding them to a queue waiting for an ACK from the correct drone, then when an ACK comes in, remove those messages from the transfer queue.&lt;/p&gt;
+&lt;p&gt;Nice — you’re thinking about the full problem (confidentiality, integrity, replay protection, compromise handling, and reliability). Below I’ll give a practical, battle-tested design that balances &lt;strong&gt;performance&lt;/strong&gt; and &lt;strong&gt;security&lt;/strong&gt;, plus concrete choices (algorithms, message format, ACK strategies, handling compromise), trade-offs, and a short protocol flow you can implement on constrained drones.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Short summary / recommendation&lt;/h1&gt;&lt;p&gt;Use a &lt;strong&gt;hybrid cryptosystem&lt;/strong&gt; like SSH: ephemeral &lt;strong&gt;asymmetric&lt;/strong&gt; key exchange (ECDH) to establish &lt;strong&gt;short-lived symmetric keys&lt;/strong&gt;, then use &lt;strong&gt;AEAD&lt;/strong&gt; (authenticated encryption) for bulk messages.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For performance/security tradeoff: &lt;strong&gt;ChaCha20-Poly1305&lt;/strong&gt; (software-friendly) or &lt;strong&gt;AES-GCM&lt;/strong&gt; (if you have AES hardware) as your AEAD.&lt;/li&gt;
+&lt;li&gt;For key exchange/signatures: &lt;strong&gt;X25519&lt;/strong&gt; (ECDH) + &lt;strong&gt;Ed25519&lt;/strong&gt; signatures for authenticity.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;per-sender monotonic counters / nonces&lt;/strong&gt; for AEAD to prevent replay and enable unique nonces without a lot of state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For broadcasting in a swarm, combine:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Signed controller commands&lt;/strong&gt; (so drones can verify origin) and&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Encrypted payloads&lt;/strong&gt; using a &lt;strong&gt;group key&lt;/strong&gt; for confidentiality (or hop-by-hop encryption if necessary).
+Rekey frequently and have a revocation/rotation process (see below).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For ACKs: use &lt;strong&gt;lightweight ACKs&lt;/strong&gt; (unicast) and &lt;strong&gt;aggregated ACKs/bitmaps&lt;/strong&gt; for broadcast to avoid ACK storms, plus a retransmit queue with exponential backoff and bounded retries.&lt;/p&gt;
+&lt;p&gt;If you want decentralization like “blockchain”: don’t use a full blockchain for high-volume control messages — it’s too heavy. Use &lt;strong&gt;lightweight consensus / signature chains&lt;/strong&gt; or &lt;strong&gt;threshold cryptography&lt;/strong&gt; to get some decentralization without the full ledger cost.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Concrete message format (recommended)&lt;/h1&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;SENDER_ID&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 8-bit or 16-bit
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;#34;CMD_ID&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1542&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 32-bit monotonic per-sender counter
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;#34;TYPE&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;CMD&amp;#34;&lt;/span&gt;&lt;span class="err"&gt;|&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;ACK&amp;#34;&lt;/span&gt;&lt;span class="err"&gt;|&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;REKEY&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// message type
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;#34;NONCE&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;64-bit or 96-bit&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// AEAD nonce/counter
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;#34;PAYLOAD&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;&amp;lt;ciphertext&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// AEAD ciphertext (payload + optional metadata)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;#34;SIG&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;&amp;lt;signature&amp;gt;&amp;#34;&lt;/span&gt; &lt;span class="c1"&gt;// Ed25519 signature over (SENDER_ID|CMD_ID|NONCE|ciphertext) when needed
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Use AEAD so ciphertext includes authentication (MAC). &lt;code&gt;NONCE&lt;/code&gt; must be unique per key — easiest: a per-sender monotonic counter used as nonce.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Key architecture &amp;amp; storage&lt;/h1&gt;&lt;p&gt;Options (listed from simple → more secure/harder):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Controller-signed + Group key (simple, common)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Controller signs commands (Ed25519).&lt;/li&gt;
+&lt;li&gt;Controller encrypts payload with a &lt;strong&gt;group symmetric key&lt;/strong&gt; (AES-GCM / ChaCha20-Poly1305).&lt;/li&gt;
+&lt;li&gt;All drones have the group key to decrypt.&lt;/li&gt;
+&lt;li&gt;Pros: small overhead, easy broadcast.&lt;/li&gt;
+&lt;li&gt;Cons: compromise of one drone leaks confidentiality of all messages (unless rekeyed).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Per-drone keys (better confidentiality)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Controller performs ECDH with each drone to establish per-drone symmetric sessions.&lt;/li&gt;
+&lt;li&gt;For broadcast, controller encrypts separate copies (or uses group key wrapped per-drone).&lt;/li&gt;
+&lt;li&gt;Pros: compromise of one drone doesn&amp;rsquo;t expose every session key.&lt;/li&gt;
+&lt;li&gt;Cons: more bandwidth/CPU.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hybrid / Forward-secure&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Controller and drones use ephemeral X25519 to derive session keys periodically (HKDF).&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;short-lived keys&lt;/strong&gt; and rekey often to limit compromise window.&lt;/li&gt;
+&lt;li&gt;Store long-term private keys in a &lt;strong&gt;secure element&lt;/strong&gt; or microcontroller’s secure storage if available.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Threshold / Decentralized (advanced)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use threshold ECDH / threshold signing so no single drone holds a full private key for group operations.&lt;/li&gt;
+&lt;li&gt;Hard to implement and computationally heavy on embedded nodes, but resists single-node compromise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Key storage recommendations:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a hardware secure element (ATECC608A / SE050 / TPM-style) if possible; otherwise use MCU secure flash with read-restrictions.&lt;/li&gt;
+&lt;li&gt;Short-lived symmetric keys should be kept in RAM and zeroed on reboot.&lt;/li&gt;
+&lt;li&gt;Maintain a &lt;strong&gt;key revocation list (KRL)&lt;/strong&gt; and rekey the group if a drone is known compromised.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Algorithm choices &amp;amp; rationale&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Key exchange:&lt;/strong&gt; X25519 (fast, small, widely supported)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Signatures:&lt;/strong&gt; Ed25519 (fast verification, small signatures)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AEAD:&lt;/strong&gt; ChaCha20-Poly1305 (software-fast, no need for AES HW) or AES-GCM if AES hardware exists&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KDF:&lt;/strong&gt; HKDF-SHA256 to derive session keys&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MAC/Integrity:&lt;/strong&gt; Provided by AEAD — do not add extra MACs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Why ChaCha20-Poly1305? On many small MCUs without AES acceleration, ChaCha is faster and constant-time. If your hardware supports AES instructions, AES-GCM may be faster.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Sync vs Async crypto operations&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Asynchronous/non-blocking:&lt;/strong&gt; Preferable for heavy asymmetric ops (ECDH, signature verification) so you don’t block control loops. Use an RTOS task or a separate core to handle crypto.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronous:&lt;/strong&gt; Small symmetric AEAD ops (encrypt/decrypt) are fast and usually OK synchronously; if payloads are large or CPU constrained, do them asynchronously too.
+Design: do ECDH/signature verification asynchronously; cache the resulting symmetric keys and do regular encrypt/decrypt synchronously.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Handling key compromise&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Short keys + frequent rekeying&lt;/strong&gt; reduces blast radius.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When a drone crashes or is captured:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove it from the swarm (controller puts its ID in KRL).&lt;/li&gt;
+&lt;li&gt;Rekey group: controller issues &lt;code&gt;REKEY&lt;/code&gt; signed message including new ephemeral info; all non-revoked drones create new keys.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Perfect forward secrecy (PFS):&lt;/strong&gt; use ephemeral X25519 per session (gives PFS).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Consider &lt;strong&gt;rotating group keys every N minutes or after M messages&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Broadcast reliability &amp;amp; ACK strategies (to avoid spam/ACK storms)&lt;/h1&gt;&lt;p&gt;Goals: avoid spamming while ensuring at-least-once or exactly-once semantics where needed.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Unicast messages&lt;/strong&gt;: standard ack.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sender enqueues message with &lt;code&gt;(DEST_ID, CMD_ID)&lt;/code&gt;, start timer.&lt;/li&gt;
+&lt;li&gt;If ACK not received: retransmit with exponential backoff (base * 2^n), up to max tries.&lt;/li&gt;
+&lt;li&gt;ACK payload: minimal &lt;code&gt;{SRC_ID, CMD_ID, MAC}&lt;/code&gt; — MAC can be part of AEAD or a signed ACK if needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Broadcast messages&lt;/strong&gt;: reduce ACK storm with one of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Leader-only ACK&lt;/strong&gt;: one designated drone (or controller) sends ACK for entire broadcast. Good when you trust topology.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggregated ACKs / Bitmaps&lt;/strong&gt;: recipients send periodic aggregated ACKs containing a bitmap of last N CMD_IDs they received. E.g., a 64-bit bitmap can represent ACKs for 64 recent CMD_IDs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NACK/Negative ACK&lt;/strong&gt;: only nodes that missed the message request retransmit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Probabilistic ACKs (gossip)&lt;/strong&gt;: small percentage of nodes ACK+relay; redundancy handled by gossiping.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Queue management&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep a retransmit queue with metadata: &lt;code&gt;{CMD_ID, DEST_SET, last_tx_time, tries}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When ACK arrives for &lt;code&gt;(CMD_ID, node)&lt;/code&gt;, remove that node from &lt;code&gt;DEST_SET&lt;/code&gt;. When &lt;code&gt;DEST_SET&lt;/code&gt; empty, remove message from queue.&lt;/li&gt;
+&lt;li&gt;Limit total retries and drop/alert when messages fail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Duplicate suppression&lt;/strong&gt;: receivers remember (SENDER_ID, CMD_ID) in sliding window; drop duplicates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;Replay protection &amp;amp; nonces&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Use AEAD with &lt;strong&gt;unique nonces&lt;/strong&gt; per key (e.g., nonce = 64-bit monotonic counter per sender + 32-bit random salt). If counters are used as nonce, persist counter across reboots only if keys are persistent (or rekey on reboot). Never reuse nonce with same key.&lt;/li&gt;
+&lt;li&gt;Store recent &lt;code&gt;(SENDER_ID, CMD_ID)&lt;/code&gt; to detect replay. Combine with timestamp if clocks are loosely synchronized (optional).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Lightweight decentralized / “blockchain-like” ideas&lt;/h1&gt;&lt;p&gt;If you want decentralization and tamper-evidence without full blockchain overhead:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Signature chain&lt;/strong&gt; (per node): each node signs a message containing last message hash and new payload. It creates a chain of signed messages to prove order. Lightweight, but requires storing the chain.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Directed Acyclic Graph (DAG)&lt;/strong&gt;: like IOTA’s Tangle; nodes reference previous messages. Still complex.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Threshold signatures&lt;/strong&gt; for critical commands: require &lt;code&gt;k-of-n&lt;/code&gt; nodes to sign a command before it is accepted. This prevents one compromised node from issuing commands, but adds latency and communication overhead.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distributed ledger&lt;/strong&gt; for audit (not real-time control): keep a low-throughput log of important events distributed across nodes — not for high-frequency commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Conclusion: For control loops and high-volume commands, decentralized blockchain is usually &lt;strong&gt;too heavy&lt;/strong&gt;. Use authenticated signed commands and maybe threshold signing for high-impact ops.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Example flow (controller → swarm) — secure &amp;amp; practical&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Controller and each drone have long-term Ed25519 key pairs. Drones know controller public key.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Controller derives a short-lived group key:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Either: controller generates a symmetric group key and encrypts it to each drone using per-drone X25519 (or pre-shared symmetric key) — OR use ephemeral X25519 to derive session keys.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Controller sends &lt;code&gt;CMD&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Encrypts payload with group AEAD key (unique nonce = controller_counter++).&lt;/li&gt;
+&lt;li&gt;Signs header (SENDER_ID, CMD_ID, NONCE, cipher) with Ed25519 so drones can verify origin.&lt;/li&gt;
+&lt;li&gt;Broadcasts message.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drones receive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify signature (fast Ed25519 verify). If valid, decrypt AEAD.&lt;/li&gt;
+&lt;li&gt;Check duplicate &lt;code&gt;(SENDER_ID, CMD_ID)&lt;/code&gt; in sliding window. If new, process and add to seen set.&lt;/li&gt;
+&lt;li&gt;Drone replies with ACK (option: aggregated ACK or selected leader ack).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Controller removes drone from retransmit set when ACK received.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;Libraries &amp;amp; tools&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;libsodium&lt;/strong&gt; (sodium) — great for embedded and desktop, supports X25519, Ed25519, ChaCha20-Poly1305.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mbedTLS&lt;/strong&gt; — good for constrained devices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;wolfSSL / tinycrypt&lt;/strong&gt; — alternatives for highly constrained devices.&lt;/li&gt;
+&lt;li&gt;For secure storage: ATECC608A or equivalent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Practical sizing &amp;amp; tuning tips&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sliding window size&lt;/strong&gt; = expected max out-of-order + safety, e.g., 256 entries or a bitmap of last 256 CMD_IDs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACK aggregation interval&lt;/strong&gt; = tradeoff: longer interval = fewer ACKs but slower detection (e.g., 100–500 ms).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Retransmit policy&lt;/strong&gt;: initial wait = RTT estimate, then exponential backoff (2×), max tries = 5.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rekey frequency&lt;/strong&gt; = depends on threat model; for hostile environments consider rekeying every few minutes or after N messages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;TL;DR — Quick checklist to implement now&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;X25519 + Ed25519&lt;/strong&gt; for key exchange/signing and &lt;strong&gt;ChaCha20-Poly1305&lt;/strong&gt; or &lt;strong&gt;AES-GCM&lt;/strong&gt; for AEAD.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;monotonic CMD_ID per sender + SENDER_ID&lt;/strong&gt; for dedupe. Keep a small sliding window of seen &lt;code&gt;(SENDER_ID, CMD_ID)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For broadcasts, reduce ACK storm with &lt;strong&gt;aggregated ACKs/bitmaps&lt;/strong&gt; or leader ACKs; maintain a retransmit queue per message with per-destination status.&lt;/li&gt;
+&lt;li&gt;Store keys in secure element where possible; use short-lived symmetric keys and &lt;strong&gt;rekey&lt;/strong&gt; on compromise.&lt;/li&gt;
+&lt;li&gt;Use asynchronous handling for heavy crypto ops (ECDH/signatures) if your platform supports it; symmetric ops can be done synchronously.&lt;/li&gt;
+&lt;li&gt;Avoid full blockchain; consider signature chains or threshold signing if you need decentralization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;If you want, I can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;produce a small &lt;strong&gt;packet format + pseudocode&lt;/strong&gt; for the sender/receiver (including ACK queue logic), or&lt;/li&gt;
+&lt;li&gt;sketch a &lt;strong&gt;rekey protocol&lt;/strong&gt; and rotation schedule, or&lt;/li&gt;
+&lt;li&gt;give a &lt;strong&gt;concrete implementation plan&lt;/strong&gt; with library recommendations for your specific hardware (tell me MCU or radio — e.g., nRF52840, ESP32, STM32 + LoRa/nRF24/ESP-NOW).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Which of those would help you next?&lt;/p&gt;
+&lt;p&gt;I would like to generate a mermaid JS diagram for this communication system with Drones X, Y, Z being used as an example to show how messages will find their intendend target, be ignored by unintented targets, how security will be handled, etc&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Perfect — a &lt;strong&gt;Mermaid.js diagram&lt;/strong&gt; is an excellent way to visualize your encrypted, de-duplicated swarm communication system.&lt;/p&gt;
+&lt;p&gt;Below is a &lt;strong&gt;detailed and readable diagram&lt;/strong&gt; that shows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Message propagation through the swarm (Controller → Drone X → Drone Y → Drone Z).&lt;/li&gt;
+&lt;li&gt;How &lt;code&gt;CMD_ID&lt;/code&gt; and &lt;code&gt;SENDER_ID&lt;/code&gt; prevent duplicates.&lt;/li&gt;
+&lt;li&gt;How encryption, decryption, and ACKs are handled.&lt;/li&gt;
+&lt;li&gt;How compromised or unintended drones ignore commands not meant for them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can paste this directly into a Markdown document or Mermaid Live Editor (&lt;a href="https://mermaid.live"target="_blank" rel="noopener"&gt;https://mermaid.live&lt;/a&gt;) to render it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre class="mermaid hx:mt-6"&gt;
+sequenceDiagram
+autonumber
+participant C as 🧠 Controller
+participant X as 🚁 Drone X
+participant Y as 🚁 Drone Y
+participant Z as 🚁 Drone Z
+Note over C: 🔐 Controller creates message&amp;lt;br/&amp;gt;CMD_ID=1542, SENDER_ID=C&amp;lt;br/&amp;gt;Encrypts payload with group key&amp;lt;br/&amp;gt;Signs with Ed25519&amp;lt;br/&amp;gt;AEAD nonce = counter++
+C-&amp;gt;&amp;gt;X: Broadcast Encrypted CMD (CMD_ID=1542)
+C-&amp;gt;&amp;gt;Y: Broadcast Encrypted CMD (CMD_ID=1542)
+C-&amp;gt;&amp;gt;Z: Broadcast Encrypted CMD (CMD_ID=1542)
+Note over X,Y,Z: Each drone verifies signature (Ed25519)&amp;lt;br/&amp;gt;If valid → decrypt using group key (ChaCha20-Poly1305)&amp;lt;br/&amp;gt;Check if (SENDER_ID, CMD_ID) already seen
+X-&amp;gt;&amp;gt;X: 🧩 (C,1542) not seen → process&amp;lt;br/&amp;gt;Execute command&amp;lt;br/&amp;gt;Add to cache
+Y-&amp;gt;&amp;gt;Y: 🧩 (C,1542) not seen → process&amp;lt;br/&amp;gt;Execute command&amp;lt;br/&amp;gt;Add to cache
+Z-&amp;gt;&amp;gt;Z: 🧩 (C,1542) not seen → process&amp;lt;br/&amp;gt;Execute command&amp;lt;br/&amp;gt;Add to cache
+Note over X,Y,Z: Each drone rebroadcasts command&amp;lt;br/&amp;gt;for swarm propagation
+X--&amp;gt;&amp;gt;Y: Rebroadcast CMD (C,1542)
+Y--&amp;gt;&amp;gt;Z: Rebroadcast CMD (C,1542)
+Z--&amp;gt;&amp;gt;X: Rebroadcast CMD (C,1542)
+Note over X,Y,Z: On reception, duplicate detection:&amp;lt;br/&amp;gt;If (SENDER_ID, CMD_ID) already in cache → ignore
+X-&amp;gt;&amp;gt;X: Duplicate detected → ignore
+Y-&amp;gt;&amp;gt;Y: Duplicate detected → ignore
+Z-&amp;gt;&amp;gt;Z: Duplicate detected → ignore
+Note over X,Y,Z: ACK process
+X-&amp;gt;&amp;gt;C: ACK (CMD_ID=1542, OK)
+Y-&amp;gt;&amp;gt;C: ACK (CMD_ID=1542, OK)
+Z-&amp;gt;&amp;gt;C: ACK (CMD_ID=1542, OK)
+C-&amp;gt;&amp;gt;C: ✅ Remove CMD_ID=1542 from retransmit queue
+Note over C: ACK timeout for any missing drones → retry with backoff
+Note over Z: ⚠️ If Drone Z compromised → revoke ID Z&amp;lt;br/&amp;gt;Controller issues signed REKEY&amp;lt;br/&amp;gt;All other drones derive new group key&amp;lt;br/&amp;gt;Z can no longer decrypt messages
+&lt;/pre&gt;&lt;hr&gt;
+&lt;h3&gt;🧩 Diagram Highlights&lt;span class="hx:absolute hx:-mt-20" id="-diagram-highlights"&gt;&lt;/span&gt;
+&lt;a href="#-diagram-highlights" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unique Command ID:&lt;/strong&gt; prevents duplicate processing (&lt;code&gt;CMD_ID&lt;/code&gt;, &lt;code&gt;SENDER_ID&lt;/code&gt; pair).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AEAD Encryption:&lt;/strong&gt; ensures integrity and confidentiality (ChaCha20-Poly1305 or AES-GCM).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Signature Verification:&lt;/strong&gt; confirms authenticity (Ed25519).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rebroadcasting:&lt;/strong&gt; enables swarm-wide distribution without flooding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACK Handling:&lt;/strong&gt; prevents resending already acknowledged messages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compromise Handling:&lt;/strong&gt; shows secure rekeying on node compromise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Would you like me to make a &lt;strong&gt;second diagram&lt;/strong&gt; showing how the &lt;strong&gt;rekey / key rotation&lt;/strong&gt; event works (after a drone is compromised or lost)?
+That one would show key revocation and new session key distribution.&lt;/p&gt;</description></item><item><title/><link>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/swarm_contol1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gndpwnd.github.io/research/imass_cars_llm_agent_swarms/swarm_contol1/</guid><description>
+&lt;p&gt;now this gets into the topic of swarm control. in terms of physical movements, i will want each drone to behave independently depending on various markers, especially in scenarios like GPS denial. but i want the easiest way to move the entire swarm. there is already in place an algorithm that finds the ideal orientation for the swarm, but what about using math like lattices for replicating this optimal pattern across larger swarms?&lt;/p&gt;
+&lt;p&gt;Swarm Squad
+A simulation framework for multi-agent systems.
+Swarm Squad is the foundational module of the Swarm Squad project, providing a robust framework for simulating and analyzing multi-agent systems. It implements core functionality for agent modeling, environment simulation, and visualization, serving as the base platform upon which the more specialized Episode I and Episode II modules are built.&lt;/p&gt;
+&lt;p&gt;The creation of Swarm Squad was motivated by the need for a flexible, customizable, and scalable framework that could simulate the behavior of multiple autonomous agents in various scenarios. Traditional simulation tools often lacked the specific features needed for complex swarm behavior analysis or were too rigid in their implementation to allow for rapid prototyping and experimentation.&lt;/p&gt;
+&lt;p&gt;Core Capabilities
+Swarm Squad addresses these challenges with an architecture designed specifically for multi-agent simulation:&lt;/p&gt;
+&lt;p&gt;Modular Agent Design: Define agents with customizable properties, behaviors, and capabilities
+Physics-Based Simulation: Realistic movement and interaction with accurate physical modeling
+Dynamic Environment Creation: Build and modify environments with obstacles, boundaries, and other entities
+Configurable Simulation Parameters: Adjust simulation speed, precision, and complexity based on your needs
+Comprehensive Data Collection: Gather metrics on agent performance, interaction patterns, and system efficiency
+Real-time Visualization: Observe agent behavior as it occurs with intuitive visual representations
+Extensible API: Build custom components and integrate with other tools through a well-documented interface
+Technical Implementation
+The base Swarm Squad module is implemented in Python, leveraging libraries such as NumPy for numerical operations and Dash for visualization. The architecture follows a component-based design that separates concerns between agent behavior, environment modeling, simulation physics, and visualization.&lt;/p&gt;
+&lt;p&gt;Key components include:&lt;/p&gt;
+&lt;p&gt;Agent Framework: Flexible base classes for defining agent properties and behaviors
+Environment Module: Tools for creating and managing simulation environments
+Simulation Engine: Core logic for advancing the simulation state and handling agent interactions
+Data Collection System: Infrastructure for gathering and analyzing simulation metrics
+Visualization Components: Interactive tools for observing and understanding agent behavior
+This modular design allows researchers to focus on the specific aspects of multi-agent systems they&amp;rsquo;re interested in while leveraging pre-built functionality for other aspects of the simulation.&lt;/p&gt;
+&lt;p&gt;Research Applications
+Swarm Squad is designed to support research in various domains, including:&lt;/p&gt;
+&lt;p&gt;Swarm intelligence and emergent behavior
+Distributed decision-making and coordination
+Formation control and collective movement
+Multi-agent learning and adaptation
+Communication-constrained coordination
+Robustness to failures and environmental challenges
+The framework provides the tools needed to explore these research areas through both structured experiments and open-ended exploration.&lt;/p&gt;
+&lt;p&gt;Swarm Squad Episode I introduces several key capabilities:&lt;/p&gt;
+&lt;p&gt;Communication-Aware Formation Control: Maintain formation integrity even in the presence of communication disruption or jamming
+Adaptive Behavior Models: Dynamically adjust agent behavior based on environmental conditions and mission objectives
+LLM-Guided Decision Making: Leverage large language models to provide strategic guidance for complex mission scenarios
+Obstacle Avoidance: Navigate complex environments while maintaining formation and mission progress
+Resilience to Communication Failures: Gracefully handle partial or complete communication loss between agents
+Performance Metrics: Comprehensive analysis tools for evaluating formation stability, mission success, and resilience&lt;/p&gt;
+&lt;p&gt;Nice — this is a great place to go next. Lattices are exactly the right kind of math for tiling a formation across many agents: they give you a simple generator (a small set of basis vectors) that you can translate/rotate/scale to replicate an “ideal” local pattern across arbitrarily large swarms. Below I’ll give the concepts, the math, practical control laws, robustness/reconfiguration strategies (including GPS-denial considerations), and a ready-to-use Python sketch you can drop into your Swarm Squad simulation.&lt;/p&gt;
+&lt;p&gt;I’ll organize this as:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Quick intuition / choices of lattices&lt;/li&gt;
+&lt;li&gt;Math: lattice basis, rotation, placement formula&lt;/li&gt;
+&lt;li&gt;Control architecture options (virtual-structure, leader-follower, consensus / graph Laplacian, potential fields)&lt;/li&gt;
+&lt;li&gt;Local control law (simple, practical) + collision avoidance&lt;/li&gt;
+&lt;li&gt;Scaling, hierarchical / recursive tiling, and reconfiguration on failures&lt;/li&gt;
+&lt;li&gt;GPS denial: localization alternatives &amp;amp; bearing/distance-based control&lt;/li&gt;
+&lt;li&gt;Python prototype (generator + local desired-position controller) you can integrate into Swarm Squad&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;1) Intuition &amp;amp; lattice choices&lt;/h1&gt;&lt;p&gt;Common tilings for planar formations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hexagonal (triangular) lattice&lt;/strong&gt; — densest packing, equal-distance neighbors (good for isotropic sensing/comm). Very common for swarms.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Square lattice&lt;/strong&gt; — easiest indexing (i, j) but fewer neighbors for the same density.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Triangular lattice&lt;/strong&gt; — same as hexagonal viewed differently.
+Choose hex if you want uniform nearest-neighbor connectivity and robust local geometry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tradeoffs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hex → better connectivity &amp;amp; fault tolerance (each node has 6 neighbors in ideal lattice).&lt;/li&gt;
+&lt;li&gt;Square → simpler addressing and indexing (grid-like), easier to map to image-based occupancy.&lt;/li&gt;
+&lt;li&gt;Triangular/other lattices → useful if you need anisotropic spacing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;2) Math: lattice basis, rotation, placement&lt;/h1&gt;&lt;p&gt;A 2D lattice is generated by two basis vectors ( \mathbf{a}_1, \mathbf{a}&lt;em&gt;2 ). Every lattice point is:
+[
+\mathbf{p}&lt;/em&gt;{i,j} = \mathbf{p}_0 + i\mathbf{a}_1 + j\mathbf{a}_2
+]
+where (i,j\in\mathbb{Z}) and ( \mathbf{p}_0 ) is an origin/anchor point (e.g., swarm centroid or leader pose).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hex lattice basis (spacing (d))&lt;/strong&gt;:
+[
+\mathbf{a}_1 = \begin{bmatrix} d \ 0 \end{bmatrix},\quad
+\mathbf{a}_2 = \begin{bmatrix} d/2 \ \tfrac{\sqrt{3}}{2} d \end{bmatrix}
+]
+This gives neighbor distance (d) between adjacent lattice points.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rotation&lt;/strong&gt;: if the swarm orientation (from your optimal-orientation algorithm) gives an angle (\theta), rotate each point:
+[
+\mathbf{p}^{(world)}&lt;em&gt;{i,j} = \mathbf{p}&lt;/em&gt;{center} + R(\theta),\mathbf{p}_{i,j}
+]
+with
+[
+R(\theta) = \begin{bmatrix} \cos\theta &amp;amp; -\sin\theta \ \sin\theta &amp;amp; \cos\theta \end{bmatrix}.
+]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scaling&lt;/strong&gt;: change (d) to scale the lattice spacing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assignment to drones&lt;/strong&gt;: map drone IDs to lattice indices ((i,j)) deterministically (round-robin, snake-fill, Hilbert curve for locality, etc.). For dynamic swarms you can use a matching algorithm to assign nearest free lattice points to drones.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;3) Control architectures (how to enact lattice positions)&lt;/h1&gt;&lt;p&gt;A few standard patterns:&lt;/p&gt;
+&lt;p&gt;A) &lt;strong&gt;Virtual Structure (VS)&lt;/strong&gt;
+Treat the whole lattice as a rigid virtual body. Each drone is assigned a fixed position in the body frame. The virtual body has a pose (translation + orientation) commanded by a higher-level controller. Pros: good coordinated movement and simple assignment. Cons: needs accurate relative localization or communication to maintain per-agent offsets.&lt;/p&gt;
+&lt;p&gt;B) &lt;strong&gt;Leader-Follower&lt;/strong&gt;
+One or several leaders follow the global trajectory/orientation; followers maintain relative offsets to leaders or to local neighbors. Simpler, but single-leader failure is a risk (use multi-leader or rotating leaders).&lt;/p&gt;
+&lt;p&gt;C) &lt;strong&gt;Consensus / Graph Laplacian-based formation&lt;/strong&gt;
+Use local diffusive control laws driven by graph Laplacian so the swarm converges to the formation shape using only neighbor information. Good for decentralized behavior and robustness.&lt;/p&gt;
+&lt;p&gt;D) &lt;strong&gt;Behavioral + Potential Fields&lt;/strong&gt;
+Combine attractive forces to assigned lattice points with repulsive forces for collision avoidance. Simple and works well in practice for many swarms.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;4) A simple, practical local control law&lt;/h1&gt;&lt;p&gt;Goal: every drone (i) has a desired lattice point (p^*_i(t)). Use a PD controller on position and velocity plus local collision avoidance.&lt;/p&gt;
+&lt;p&gt;Let (p_i) be the current world position, (v_i) the current velocity. Desired velocity:
+[
+v^{des}&lt;em&gt;i = v&lt;/em&gt;{global} + K_p (p^&lt;em&gt;_i - p_i) + K_d (v^&lt;/em&gt; - v_i)
+]
+where (v_{global}) is desired translational velocity from the global controller (virtual structure / leader). If you only have desired pose (no (v^&lt;em&gt;)), set (v^&lt;/em&gt;=0).&lt;/p&gt;
+&lt;p&gt;Collision avoidance: add a repulsive term from any neighbor (j) closer than (r_{safe}):
+[
+F_{rep} = \sum_{j\in\mathcal{N}&lt;em&gt;i} K&lt;/em&gt;{rep},\phi(|p_i-p_j|),\frac{p_i-p_j}{|p_i-p_j|}
+]
+where (\phi) is large when distance small (e.g., (\phi(x)=(r_{safe}-x)) for (x&amp;lt;r_{safe}), else 0). Treat as velocity offset:
+[
+v^{cmd}_i = v^{des}&lt;em&gt;i + F&lt;/em&gt;{rep}
+]&lt;/p&gt;
+&lt;p&gt;This is simple, local, and reactive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exactness via consensus&lt;/strong&gt;: if you want exact relative distances, use gradient-descent on inter-agent distance errors:
+[
+\dot p_i = -\sum_{j\in\mathcal{N}&lt;em&gt;i} K&lt;/em&gt;{ij}\left( |p_i - p_j| - d_{ij} \right) \frac{p_i - p_j}{|p_i - p_j|}
+]
+where (d_{ij}) are target distances (from lattice).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;5) Scaling &amp;amp; hierarchical tiling (formation-of-formations)&lt;/h1&gt;&lt;p&gt;For very large swarms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tile the plane&lt;/strong&gt; with the chosen lattice and split the swarm into &lt;strong&gt;cells&lt;/strong&gt; (clusters) each managing a local lattice patch.&lt;/li&gt;
+&lt;li&gt;Each cell has a &lt;strong&gt;cell leader&lt;/strong&gt; that tracks the cell’s virtual pose; internal drones use local controllers.&lt;/li&gt;
+&lt;li&gt;This is formation-of-formations: global apply transform ( (p_{cell}, \theta_{cell}) ) to each cell; within cell apply local lattice offsets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recursive / fractal tiling&lt;/strong&gt;: you can define a super-lattice of cells whose cell-centers themselves form another lattice (useful for geographic scaling and efficient message routing).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;6) Handling drone failure / reconfiguration (local repair)&lt;/h1&gt;&lt;p&gt;When a drone fails (or is lost):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Local gap-filling&lt;/strong&gt;: neighbors detect missing heartbeat and shift to nearest free lattice index using a &lt;em&gt;local auction&lt;/em&gt; or &lt;em&gt;consensus&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a small local ID-based leader election for the patch.&lt;/li&gt;
+&lt;li&gt;Each neighbor computes distance cost to candidate vacant lattice points and performs a distributed matching (greedy + tie-breaker by ID).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Soft reallocation&lt;/strong&gt;: neighbors move slightly to maintain global shape; full reassignment only within a limited radius to limit motion.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Multi-scale reconfiguration&lt;/strong&gt;: small failures handled locally; large failures trigger cell-level reformation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Algorithm pattern: detect vacancy → create local candidate set → run distributed greedy assign → move with smoothing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;7) GPS-denial considerations (localization &amp;amp; control)&lt;/h1&gt;&lt;p&gt;If you can’t rely on GPS, you must use relative localization:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;UWB ranging&lt;/strong&gt; + angle-of-arrival (where available) for inter-agent distances.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visual odometry &amp;amp; SLAM&lt;/strong&gt; (if drones have cameras) for relative pose to neighbors/landmarks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IMU + inter-agent distance/bearing fusion&lt;/strong&gt; with EKF for relative positions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Leader broadcasting relative pose&lt;/strong&gt;: leaders with better localization can broadcast offsets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Control strategies in GPS-denial:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;distance-only formation control&lt;/strong&gt; (bearing-less) based on desired inter-agent distances. These are usually gradient-based and converge to shapes up to reflection/rotation unless you anchor orientation with a leader or add angular constraints.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;bearing-based control&lt;/strong&gt;: requires relative bearing sensors or cameras.&lt;/li&gt;
+&lt;li&gt;Anchor orientation via &lt;strong&gt;magnetometer or relative heading consensus&lt;/strong&gt; if absolute heading is unknown.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Important: for lattice replication, you need either a global anchor (one leader with reference) or a distributed orientation consensus (everyone agrees on orientation from noisy local references).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;8) Python prototype for Swarm Squad&lt;/h1&gt;&lt;p&gt;Below is a concise code sketch that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generates hex lattice points for an (m\times n) tile around a center.&lt;/li&gt;
+&lt;li&gt;Rotates them to the desired orientation.&lt;/li&gt;
+&lt;li&gt;Assigns lattice points to agents (simple nearest free).&lt;/li&gt;
+&lt;li&gt;A small per-agent control update that computes desired velocity toward assigned lattice point and adds a repulsive collision term.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can paste this into your Swarm Squad &lt;code&gt;Agent&lt;/code&gt; update loop or a helper module.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# lattice_utils.py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scipy.spatial&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;cKDTree&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hex_basis&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;a1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;a2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;2.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;2.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;a1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;a2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;generate_hex_lattice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;center&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;radius_cells&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;a1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;a2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;hex_basis&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius_cells&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;radius_cells&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius_cells&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;radius_cells&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;center&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;a1&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;a2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pts&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Nx2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;rotate_points&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;])):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;R&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;)]])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pts&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;@&lt;/span&gt; &lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;assign_agents_to_points&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;agent_positions&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lattice_points&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# greedy nearest assignment (fast); use Hungarian for optimal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;tree&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cKDTree&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lattice_points&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;dists&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;idxs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tree&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;agent_positions&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;assigned&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;taken&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;aid&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;idx&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;idxs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# break ties&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;idx&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;taken&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# fallback: nearest unused&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;dists_k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;idxs_k&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tree&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;agent_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;aid&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;chosen&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;cand&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;idxs_k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;cand&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;taken&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;chosen&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cand&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;break&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;chosen&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;chosen&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;idx&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;idx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;chosen&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;assigned&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;aid&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;idx&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;taken&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;idx&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;assigned&lt;/span&gt; &lt;span class="c1"&gt;# mapping agent_id -&amp;gt; lattice_index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Local controller&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;local_control_step&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vel&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;p_des&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;neighbors_pos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;v_global&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;Kp&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Kd&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;r_safe&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Krep&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.7&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# PD to desired lattice point&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;v_des&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;v_global&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Kp&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p_des&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;Kd&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vel&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# repulsive from neighbors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;rep&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;p_nb&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;neighbors_pos&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;p_nb&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;dist&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linalg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;norm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;diff&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;dist&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mf"&gt;1e-6&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;dist&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;r_safe&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;rep&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;Krep&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r_safe&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;dist&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;diff&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dist&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;v_cmd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;v_des&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;rep&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# clip speed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;vmax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;2.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;speed&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linalg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;norm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v_cmd&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;speed&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;vmax&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;v_cmd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;v_cmd&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;vmax&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;speed&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;v_cmd&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Integration notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Call &lt;code&gt;generate_hex_lattice(center, d, radius)&lt;/code&gt; with center = swarm virtual center, d = lattice spacing, radius large enough to cover #agents.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;assign_agents_to_points()&lt;/code&gt; gives a quick mapping. Replace with Hungarian or local auction for better global optimality.&lt;/li&gt;
+&lt;li&gt;Each agent runs &lt;code&gt;local_control_step&lt;/code&gt; using local sensed neighbors to compute &lt;code&gt;neighbors_pos&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;9) Practical tuning &amp;amp; recommendations&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spacing (d)&lt;/strong&gt;: choose such that inter-agent sensors / propwash / aerodynamic interactions are safe. (e.g., for small quadcopters maybe (d\ge 1.0) m).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Control gains&lt;/strong&gt;: tune Kp/Kd in simulation until formation is stable and no oscillation with expected latency/noise.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Heartbeat &amp;amp; reassign frequency&lt;/strong&gt;: run reassignment auctions slowly (e.g., once per 1–5 s) so agents aren’t constantly switching positions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collision margin&lt;/strong&gt;: set &lt;code&gt;r_safe&lt;/code&gt; &amp;lt; d/2 to permit control convergence without false positive avoidance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anchoring orientation&lt;/strong&gt;: always keep at least one or a few anchors (leaders) with good absolute pose estimate if you want consistent global orientation across reboots.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;10) Next steps I can do for you (pick any)&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Generate a &lt;strong&gt;Mermaid diagram&lt;/strong&gt; that shows lattice tiling + virtual-structure mapping + failure fill algorithm.&lt;/li&gt;
+&lt;li&gt;Produce a &lt;strong&gt;detailed simulation example&lt;/strong&gt; for Swarm Squad (complete Python module) that demonstrates tiling, assignment, PD control, and local repair after random failures.&lt;/li&gt;
+&lt;li&gt;Provide a &lt;strong&gt;proof sketch&lt;/strong&gt; for convergence of the consensus/gradient controller (if you want the math formalized).&lt;/li&gt;
+&lt;li&gt;Create a &lt;strong&gt;visualization script&lt;/strong&gt; using Dash/Matplotlib that animates lattice assignment and local repair.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Which of those should I produce next?&lt;/p&gt;
+&lt;p&gt;i will want to use HEX. and lattice is just for scalabliility&lt;/p&gt;
+&lt;p&gt;Perfect — a &lt;strong&gt;hexagonal lattice (HEX)&lt;/strong&gt; is an excellent choice for scalable swarm coordination. It’s one of the most efficient spatial distributions for coverage, communication, and collision avoidance. Let’s go over how you can integrate it into your &lt;strong&gt;Swarm Squad&lt;/strong&gt; system for real and simulated drones.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;🧮 1. Why a Hexagonal Lattice Works for Swarms&lt;span class="hx:absolute hx:-mt-20" id="-1-why-a-hexagonal-lattice-works-for-swarms"&gt;&lt;/span&gt;
+&lt;a href="#-1-why-a-hexagonal-lattice-works-for-swarms" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The &lt;strong&gt;hexagonal lattice&lt;/strong&gt; gives every drone &lt;strong&gt;six equidistant neighbors&lt;/strong&gt;, forming a naturally stable, dense, and scalable structure. It’s mathematically ideal for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coverage efficiency:&lt;/strong&gt; Each drone covers the maximum area with minimal overlap.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robust connectivity:&lt;/strong&gt; Six neighbors → redundant paths for communication and navigation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decentralized scalability:&lt;/strong&gt; Adding drones simply extends the lattice pattern without global reconfiguration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Obstacle navigation:&lt;/strong&gt; Holes or distortions in the lattice automatically reflow locally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;🧠 2. Lattice-Based Position Control (Formation Layer)&lt;span class="hx:absolute hx:-mt-20" id="-2-lattice-based-position-control-formation-layer"&gt;&lt;/span&gt;
+&lt;a href="#-2-lattice-based-position-control-formation-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;For each drone ( i ), define its &lt;strong&gt;target position&lt;/strong&gt; ( p_i^* ) relative to the swarm centroid ( C ):&lt;/p&gt;
+&lt;p&gt;[
+p_i^* = C + R_i \cdot H(\theta_i)
+]&lt;/p&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;( R_i ) = radial distance from centroid (determined by lattice ring)&lt;/li&gt;
+&lt;li&gt;( \theta_i ) = angular offset within that ring&lt;/li&gt;
+&lt;li&gt;( H(\theta) ) = unit vector function for hex grid direction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The six primary lattice direction vectors (unit hex grid) are:
+[
+H_k =
+\begin{bmatrix}
+\cos(k \cdot 60°) &lt;br&gt;
+\sin(k \cdot 60°)
+\end{bmatrix}
+, \quad k = 0, 1, 2, 3, 4, 5
+]&lt;/p&gt;
+&lt;p&gt;This creates perfect tiling and keeps distance uniform even as swarm grows.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;⚙️ 3. Local Rule for Drone Movement&lt;span class="hx:absolute hx:-mt-20" id="-3-local-rule-for-drone-movement"&gt;&lt;/span&gt;
+&lt;a href="#-3-local-rule-for-drone-movement" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Each drone computes its &lt;strong&gt;local offset&lt;/strong&gt; from the ideal lattice node:
+[
+u_i = k_p (p_i^* - p_i) + k_n \sum_{j \in N_i} (p_j - p_i)
+]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;( k_p ): global lattice stiffness&lt;/li&gt;
+&lt;li&gt;( k_n ): neighbor coupling gain&lt;/li&gt;
+&lt;li&gt;( N_i ): set of six nearest neighbors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This control law keeps drones at their ideal lattice spacing, even if global GPS is denied — as long as they can sense/communicate with neighbors.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;🔐 4. Integration with Communication Layer&lt;span class="hx:absolute hx:-mt-20" id="-4-integration-with-communication-layer"&gt;&lt;/span&gt;
+&lt;a href="#-4-integration-with-communication-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tie this to your earlier encrypted communication model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each drone broadcasts &lt;strong&gt;position, velocity, and local hex index&lt;/strong&gt; in encrypted packets.&lt;/li&gt;
+&lt;li&gt;Neighbors use &lt;strong&gt;CMD_ID + drone ID&lt;/strong&gt; to prevent stale updates.&lt;/li&gt;
+&lt;li&gt;Only neighboring drones (within a hex radius = 1) process these updates.&lt;/li&gt;
+&lt;li&gt;If a drone loses contact with one or more neighbors, it uses &lt;strong&gt;local interpolation&lt;/strong&gt; to re-establish its cell center until reconnection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;🔄 5. Handling GPS Denial&lt;span class="hx:absolute hx:-mt-20" id="-5-handling-gps-denial"&gt;&lt;/span&gt;
+&lt;a href="#-5-handling-gps-denial" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In GPS-denied environments:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Maintain &lt;strong&gt;relative positioning&lt;/strong&gt; via UWB, optical flow, or RSSI.&lt;/li&gt;
+&lt;li&gt;Compute &lt;strong&gt;relative hex node&lt;/strong&gt; positions using local distance + direction estimates.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;swarm centroid estimation&lt;/strong&gt; from consensus averaging:
+[
+C_i = \frac{1}{|N_i| + 1}\left(p_i + \sum_{j \in N_i} p_j\right)
+]
+Each drone converges to the same estimated centroid without needing GPS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;💻 6. Implementation in &lt;em&gt;Swarm Squad&lt;/em&gt;&lt;span class="hx:absolute hx:-mt-20" id="-6-implementation-in-swarm-squad"&gt;&lt;/span&gt;
+&lt;a href="#-6-implementation-in-swarm-squad" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can integrate the lattice logic as a &lt;strong&gt;FormationController&lt;/strong&gt; module:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HexLatticeFormation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;spacing&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt; &lt;span class="c1"&gt;# meters between neighbors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hex_position&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;ring&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# hex ring number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;theta&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ring&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;spacing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;theta&lt;/span&gt;&lt;span class="p"&gt;)])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;update&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;drone&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;neighbors&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hex_position&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;drone&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lattice_index&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;correction&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Kp&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;drone&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;position&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;neighbor_term&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Kn&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;position&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;drone&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;position&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;neighbors&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;drone&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;velocity_command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;correction&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;neighbor_term&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;🗺️ 7. Example Visualization (Mermaid Diagram)&lt;span class="hx:absolute hx:-mt-20" id="-7-example-visualization-mermaid-diagram"&gt;&lt;/span&gt;
+&lt;a href="#-7-example-visualization-mermaid-diagram" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here’s a conceptual flow of how the &lt;strong&gt;control and communication layers&lt;/strong&gt; interact in your swarm:&lt;/p&gt;
+&lt;pre class="mermaid hx:mt-6"&gt;
+graph TD
+C[🧠 Swarm Controller] --&amp;gt;|CMD_ID, Target Formation| X[Drone X]
+C --&amp;gt; Y[Drone Y]
+C --&amp;gt; Z[Drone Z]
+subgraph HEX-Lattice Formation
+X --&amp;gt;|Neighbor Updates| Y
+Y --&amp;gt;|Neighbor Updates| Z
+Z --&amp;gt;|Neighbor Updates| X
+end
+X --&amp;gt;|Encrypted Position Packet| Y
+Y --&amp;gt;|Encrypted Position Packet| Z
+Z --&amp;gt;|Encrypted Position Packet| X
+X --&amp;gt;|ACK| C
+Y --&amp;gt;|ACK| C
+Z --&amp;gt;|ACK| C
+subgraph Local Control Law
+Xc[(u_i = k_p(p_i*-p_i) + k_nΣ(p_j-p_i))]
+Yc[(u_i = k_p(p_i*-p_i) + k_nΣ(p_j-p_i))]
+Zc[(u_i = k_p(p_i*-p_i) + k_nΣ(p_j-p_i))]
+end
+X --&amp;gt; Xc
+Y --&amp;gt; Yc
+Z --&amp;gt; Zc
+&lt;/pre&gt;&lt;hr&gt;
+&lt;h2&gt;⚡ Summary&lt;span class="hx:absolute hx:-mt-20" id="-summary"&gt;&lt;/span&gt;
+&lt;a href="#-summary" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Goal&lt;/th&gt;
+&lt;th&gt;Solution&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Efficient scalable swarm geometry&lt;/td&gt;
+&lt;td&gt;Hexagonal lattice spacing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Easy full-swarm movement&lt;/td&gt;
+&lt;td&gt;Offset all lattice nodes by swarm centroid vector&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GPS-denied operation&lt;/td&gt;
+&lt;td&gt;Local relative positioning + consensus centroid&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Security &amp;amp; reliability&lt;/td&gt;
+&lt;td&gt;Encrypted neighbor messages with CMD_ID deduplication&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Robustness to dropout&lt;/td&gt;
+&lt;td&gt;Local interpolation and lattice reformation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Would you like me to generate a &lt;strong&gt;3D version&lt;/strong&gt; of the hex-lattice model (like a volumetric hex grid for altitude-separated swarms)? It’s the natural next step if you want your drones to form 3D layers or fly in vertical formations.&lt;/p&gt;
+&lt;p&gt;how would i make modifications to the controller that exists for the swarm controll&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/Swarm-Squad/Swarm-Squad-Ep1/refs/heads/main/src/swarm_squad_ep1/controllers/behavior_controller.py"target="_blank" rel="noopener"&gt;https://raw.githubusercontent.com/Swarm-Squad/Swarm-Squad-Ep1/refs/heads/main/src/swarm_squad_ep1/controllers/behavior_controller.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;
+Behavior-based controller implementing obstacle avoidance, wall following,
+and destination control behaviors.
+&amp;quot;&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;import numpy as np&lt;/p&gt;
+&lt;p&gt;import swarm_squad_ep1.config as config
+from swarm_squad_ep1.controllers.base_controller import BaseController
+from swarm_squad_ep1.models.swarm_state import SwarmState&lt;/p&gt;
+&lt;p&gt;class BehaviorController(BaseController):
+&amp;quot;&amp;quot;&amp;quot;
+Controller that implements behavior-based control strategies.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This controller handles behaviors such as:
+- Obstacle avoidance
+- Wall following
+- Destination reaching
+- Return-to-launch (RTL) behavior for jammed agents
+&amp;quot;&amp;quot;&amp;quot;
+def __init__(self, swarm_state: SwarmState):
+&amp;quot;&amp;quot;&amp;quot;
+Initialize the behavior controller.
+Args:
+swarm_state: Reference to the swarm state object
+&amp;quot;&amp;quot;&amp;quot;
+print(&amp;quot;BREAKPOINT: BehaviorController initialized&amp;quot;)
+super().__init__(swarm_state)
+def compute_control(self) -&amp;gt; np.ndarray:
+&amp;quot;&amp;quot;&amp;quot;
+Calculate behavior-based control inputs for all agents.
+Returns:
+A numpy array of shape (swarm_size, 2) containing the control
+inputs for each agent in the swarm.
+&amp;quot;&amp;quot;&amp;quot;
+# print(
+# f&amp;quot;BREAKPOINT: BehaviorController.compute_control called at iteration {self.swarm_state.iteration}&amp;quot;
+# )
+# Reset control inputs
+control_inputs = np.zeros((self.swarm_state.swarm_size, 2))
+# Apply behavior-based control for each agent
+for i in range(self.swarm_state.swarm_size):
+# For agents affected by high-power jamming, return to launch
+if not self.swarm_state.agent_status[i]:
+self._add_rtl_behavior(control_inputs, i)
+continue
+# Normal behavior for active agents
+has_obstacle_influence = False
+# Only consider hard obstacles if in hard obstacle mode
+if config.OBSTACLE_MODE == config.ObstacleMode.HARD:
+# Check for obstacle collisions and apply avoidance
+for obstacle in self.swarm_state.obstacles:
+obstacle_pos = np.array([obstacle[0], obstacle[1]])
+obstacle_radius = obstacle[2]
+# Calculate distance to obstacle center
+dist_to_center = np.linalg.norm(
+self.swarm_state.swarm_position[i] - obstacle_pos
+)
+# Define buffer zones
+buffer_zone = obstacle_radius + 6.0
+wall_follow_zone = obstacle_radius + 3.0
+if dist_to_center &amp;lt; buffer_zone: # If within buffer zone
+has_obstacle_influence = True
+if dist_to_center &amp;lt; wall_follow_zone:
+# Apply strong avoidance when very close
+self._add_obstacle_avoidance(
+control_inputs, i, obstacle_pos, obstacle_radius
+)
+# Minimal destination control when very close to obstacle
+self._add_destination_control(control_inputs, i, weight=0.3)
+else:
+# Apply wall following when in outer buffer zone
+wall_normal = (
+self.swarm_state.swarm_position[i] - obstacle_pos
+) / dist_to_center
+wall_pos = obstacle_pos + wall_normal * obstacle_radius
+self._add_wall_following(
+control_inputs, i, wall_pos, wall_normal
+)
+# Reduced destination control during wall following
+self._add_destination_control(control_inputs, i, weight=0.4)
+# If not influenced by any obstacle, apply normal destination control
+if not has_obstacle_influence:
+self._add_destination_control(control_inputs, i, weight=1.0)
+return control_inputs
+def _add_rtl_behavior(self, control_inputs: np.ndarray, agent_index: int):
+&amp;quot;&amp;quot;&amp;quot;
+Add return-to-launch control input for an agent affected by jamming.
+Args:
+control_inputs: The array of control inputs to modify
+agent_index: Index of the agent to control
+&amp;quot;&amp;quot;&amp;quot;
+# RTL parameters
+rtl_magnitude = 0.8 # Slightly slower return speed
+# Calculate vector to initial position
+rtl_vector = (
+self.swarm_state.initial_positions[agent_index]
+- self.swarm_state.swarm_position[agent_index]
+)
+dist_to_home = np.linalg.norm(rtl_vector)
+# If very close to home, stop
+if dist_to_home &amp;lt; 0.5:
+control_inputs[agent_index] = np.zeros(2)
+return
+# Calculate direction and apply speed
+if dist_to_home &amp;gt; 0: # Avoid division by zero
+rtl_direction = rtl_vector / dist_to_home
+# Scale control input based on distance
+control_param = min(rtl_magnitude, dist_to_home * 0.1)
+# Apply to control input
+control_inputs[agent_index] = rtl_direction * control_param
+def _add_destination_control(
+self, control_inputs: np.ndarray, agent_index: int, weight=1.0
+):
+&amp;quot;&amp;quot;&amp;quot;
+Add destination-reaching control input for an agent.
+Args:
+control_inputs: The array of control inputs to modify
+agent_index: Index of the agent to control
+weight: Weight factor for the control input (0.0-1.0)
+&amp;quot;&amp;quot;&amp;quot;
+# Parameters for destination control
+am = config.DESTINATION_ATTRACTION_MAGNITUDE
+bm = config.DESTINATION_DISTANCE_THRESHOLD
+# Calculate vector to destination
+destination_vector = (
+self.swarm_state.swarm_destination
+- self.swarm_state.swarm_position[agent_index]
+)
+dist_to_dest = np.linalg.norm(destination_vector)
+if dist_to_dest &amp;gt; 0: # Avoid division by zero
+destination_direction = destination_vector / dist_to_dest
+# Scale control input based on distance
+if dist_to_dest &amp;gt; bm:
+control_param = am
+else:
+control_param = am * (dist_to_dest / bm)
+# Apply weight to control input
+control_update = weight * destination_direction * control_param
+control_inputs[agent_index] += control_update
+def _add_obstacle_avoidance(
+self,
+control_inputs: np.ndarray,
+agent_index: int,
+obstacle_position: np.ndarray,
+obstacle_radius: float,
+):
+&amp;quot;&amp;quot;&amp;quot;
+Add obstacle avoidance control input for an agent.
+Args:
+control_inputs: The array of control inputs to modify
+agent_index: Index of the agent to control
+obstacle_position: Position of the obstacle
+obstacle_radius: Radius of the obstacle
+&amp;quot;&amp;quot;&amp;quot;
+# Avoidance parameters
+ao = config.OBSTACLE_AVOIDANCE_MAGNITUDE
+bo = config.OBSTACLE_INFLUENCE_RANGE
+# Calculate vector away from the obstacle
+obstacle_vector = (
+self.swarm_state.swarm_position[agent_index] - obstacle_position
+)
+dist_to_obstacle = np.linalg.norm(obstacle_vector)
+if dist_to_obstacle &amp;lt; (obstacle_radius + bo):
+avoidance_direction = obstacle_vector / dist_to_obstacle
+# Stronger exponential scaling for more aggressive close-range avoidance
+proximity_factor = np.exp(-0.3 * (dist_to_obstacle - obstacle_radius))
+control_param = (
+ao
+* proximity_factor
+* (1 + 1 / (dist_to_obstacle - obstacle_radius + 0.1))
+)
+# Add to existing control input
+control_inputs[agent_index] += avoidance_direction * control_param
+def _add_wall_following(
+self,
+control_inputs: np.ndarray,
+agent_index: int,
+wall_position: np.ndarray,
+wall_normal: np.ndarray,
+):
+&amp;quot;&amp;quot;&amp;quot;
+Add wall-following control input for an agent.
+Args:
+control_inputs: The array of control inputs to modify
+agent_index: Index of the agent to control
+wall_position: Position on the wall closest to the agent
+wall_normal: Normal vector perpendicular to the wall
+&amp;quot;&amp;quot;&amp;quot;
+# Wall following parameters
+af = config.WALL_FOLLOWING_MAGNITUDE
+df = config.WALL_DISTANCE
+# Calculate perpendicular distance to wall
+agent_position = self.swarm_state.swarm_position[agent_index]
+distance_to_wall = np.dot(agent_position - wall_position, wall_normal)
+# Calculate tangent direction (clockwise around obstacle)
+tangent_direction = np.array([-wall_normal[1], wall_normal[0]])
+# Enhanced wall following behavior
+if abs(distance_to_wall) &amp;gt; df:
+# Stronger correction when too close or too far from wall
+correction = -np.sign(distance_to_wall) * wall_normal
+# Increase correction influence
+control = af * (0.4 * tangent_direction + 0.6 * correction)
+else:
+# Stronger wall following when at good distance
+control = 1.2 * af * tangent_direction
+control_inputs[agent_index] += control
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/Swarm-Squad/Swarm-Squad-Ep1/refs/heads/main/src/swarm_squad_ep1/controllers/formation_controller.py"target="_blank" rel="noopener"&gt;https://raw.githubusercontent.com/Swarm-Squad/Swarm-Squad-Ep1/refs/heads/main/src/swarm_squad_ep1/controllers/formation_controller.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;
+Communication-aware controller that implements formation control logic.
+&amp;quot;&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;import numpy as np&lt;/p&gt;
+&lt;p&gt;import swarm_squad_ep1.config as config
+import swarm_squad_ep1.utils as utils
+from swarm_squad_ep1.controllers.base_controller import BaseController
+from swarm_squad_ep1.models.swarm_state import SwarmState&lt;/p&gt;
+&lt;p&gt;class FormationController(BaseController):
+&amp;quot;&amp;quot;&amp;quot;
+Controller that implements communication-aware formation control logic.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This controller maintains communication quality between agents by adjusting
+their positions to ensure connectivity while keeping a desired formation.
+&amp;quot;&amp;quot;&amp;quot;
+def __init__(self, swarm_state: SwarmState):
+&amp;quot;&amp;quot;&amp;quot;
+Initialize the formation controller.
+Args:
+swarm_state: Reference to the swarm state object
+&amp;quot;&amp;quot;&amp;quot;
+print(&amp;quot;BREAKPOINT: FormationController initialized&amp;quot;)
+super().__init__(swarm_state)
+def compute_control(self) -&amp;gt; np.ndarray:
+&amp;quot;&amp;quot;&amp;quot;
+Calculate control inputs for formation control.
+Returns:
+A numpy array of shape (swarm_size, 2) containing the control
+inputs for each agent in the swarm.
+&amp;quot;&amp;quot;&amp;quot;
+# print(
+# f&amp;quot;BREAKPOINT: FormationController.compute_control called at iteration {self.swarm_state.iteration}&amp;quot;
+# )
+# Reset control inputs
+control_inputs = np.zeros((self.swarm_state.swarm_size, 2))
+# Formation control - only for active agents
+for i in range(self.swarm_state.swarm_size):
+# Skip agents affected by high-power jamming (returning to launch)
+if not self.swarm_state.agent_status[i]:
+continue
+for j in [
+x
+for x in range(self.swarm_state.swarm_size)
+if x != i and self.swarm_state.agent_status[x]
+]:
+rij = utils.calculate_distance(
+self.swarm_state.swarm_position[i],
+self.swarm_state.swarm_position[j],
+)
+aij = utils.calculate_aij(
+config.ALPHA, config.DELTA, rij, config.R0, config.V
+)
+# Only apply formation control if communication quality is above threshold
+if aij &amp;gt;= config.PT:
+rho_ij = utils.calculate_rho_ij(
+config.BETA, config.V, rij, config.R0
+)
+else:
+rho_ij = 0
+qi = self.swarm_state.swarm_position[i, :]
+qj = self.swarm_state.swarm_position[j, :]
+eij = (qi - qj) / np.sqrt(rij)
+# Formation control input
+control_inputs[i] += rho_ij * eij
+return control_inputs
+def update_swarm_state(self):
+&amp;quot;&amp;quot;&amp;quot;
+Update the swarm state based on agent interactions.
+This method calculates and updates the communication quality,
+distance matrices, and other state information.
+&amp;quot;&amp;quot;&amp;quot;
+# Update communication matrices
+self.swarm_state.update_matrices()
+# Compute and apply control inputs
+control_inputs = self.compute_control()
+# For agents affected by high-power jamming, get return-to-launch control
+# from the behavior controller
+if config.OBSTACLE_MODE == config.ObstacleMode.HIGH_POWER_JAMMING:
+# Import here to avoid circular imports
+from swarm_squad_ep1.controllers.behavior_controller import (
+BehaviorController,
+)
+rtl_controller = BehaviorController(self.swarm_state)
+for i in range(self.swarm_state.swarm_size):
+if not self.swarm_state.agent_status[i]:
+# Calculate RTL control for returning agents
+rtl_inputs = np.zeros((self.swarm_state.swarm_size, 2))
+rtl_controller._add_rtl_behavior(rtl_inputs, i)
+control_inputs[i] = rtl_inputs[i]
+self.apply_control(control_inputs)
+# Update performance metrics
+self.swarm_state.update_performance_metrics()
+# Store current positions for trajectory visualization
+self.swarm_state.update_swarm_paths()
+# Increment iteration counter
+self.swarm_state.iteration += 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/Swarm-Squad/Swarm-Squad-Ep1/refs/heads/main/src/swarm_squad_ep1/controllers/base_controller.py"target="_blank" rel="noopener"&gt;https://raw.githubusercontent.com/Swarm-Squad/Swarm-Squad-Ep1/refs/heads/main/src/swarm_squad_ep1/controllers/base_controller.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;
+Base controller interface defining the common methods for all controllers.
+&amp;quot;&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;from abc import ABC, abstractmethod&lt;/p&gt;
+&lt;p&gt;import numpy as np&lt;/p&gt;
+&lt;p&gt;from swarm_squad_ep1.models.swarm_state import SwarmState&lt;/p&gt;
+&lt;p&gt;class BaseController(ABC):
+&amp;quot;&amp;quot;&amp;quot;
+Abstract base class for all controllers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Controllers must implement the compute_control method which calculates
+control inputs for each agent in the swarm.
+&amp;quot;&amp;quot;&amp;quot;
+def __init__(self, swarm_state: SwarmState):
+&amp;quot;&amp;quot;&amp;quot;
+Initialize the controller with a reference to the swarm state.
+Args:
+swarm_state: Reference to the swarm state object
+&amp;quot;&amp;quot;&amp;quot;
+self.swarm_state = swarm_state
+@abstractmethod
+def compute_control(self) -&amp;gt; np.ndarray:
+&amp;quot;&amp;quot;&amp;quot;
+Calculate control inputs for all agents in the swarm.
+Returns:
+A numpy array of shape (swarm_size, 2) containing the control
+inputs for each agent in the swarm.
+&amp;quot;&amp;quot;&amp;quot;
+pass
+def apply_control(self, control_inputs: np.ndarray = None):
+&amp;quot;&amp;quot;&amp;quot;
+Apply computed control inputs to update agent positions.
+Args:
+control_inputs: Optional control inputs to apply. If None,
+compute_control() will be called to get control inputs.
+&amp;quot;&amp;quot;&amp;quot;
+if control_inputs is None:
+control_inputs = self.compute_control()
+# Apply the control inputs to the swarm state
+self.swarm_state.swarm_control_ui = control_inputs
+self.swarm_state.swarm_position += control_inputs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Excellent — you’ve already got a clean modular controller setup in &lt;em&gt;Swarm Squad&lt;/em&gt;.
+Now that you want to integrate &lt;strong&gt;hexagonal lattice formation control&lt;/strong&gt; and &lt;strong&gt;decentralized communication-aware movement&lt;/strong&gt;, you’ll modify the system by &lt;strong&gt;adding a specialized controller subclass&lt;/strong&gt; rather than altering the existing base or formation controllers directly.&lt;/p&gt;
+&lt;p&gt;This keeps your architecture extensible, backward-compatible, and simulation-friendly.&lt;/p&gt;
+&lt;p&gt;Let’s go step by step 👇&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;🧩 1. Add a New Controller: &lt;code&gt;HexLatticeController&lt;/code&gt;&lt;span class="hx:absolute hx:-mt-20" id="-1-add-a-new-controller-hexlatticecontroller"&gt;&lt;/span&gt;
+&lt;a href="#-1-add-a-new-controller-hexlatticecontroller" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You’ll subclass from &lt;code&gt;BaseController&lt;/code&gt; just like &lt;code&gt;FormationController&lt;/code&gt;, but the key difference is that you’ll &lt;strong&gt;compute lattice-relative target positions&lt;/strong&gt; rather than pairwise attraction/repulsion forces.&lt;/p&gt;
+&lt;p&gt;Below is a prototype implementation ready to integrate:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;Hexagonal lattice-based formation controller.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;Maintains scalable, communication-aware swarm geometry.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;swarm_squad_ep1.controllers.base_controller&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BaseController&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;swarm_squad_ep1.models.swarm_state&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;SwarmState&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;swarm_squad_ep1.config&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;swarm_squad_ep1.utils&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;utils&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HexLatticeController&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BaseController&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Controller implementing a scalable hexagonal-lattice swarm formation.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Each drone aligns to a virtual lattice node relative to the swarm centroid.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Drones communicate only with local neighbors for robustness and scalability.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;SwarmState&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;float&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Initialize the hex lattice controller.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Args:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; swarm_state: SwarmState reference
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; spacing: Desired spacing between neighboring drones (m)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;BREAKPOINT: HexLatticeController initialized&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;super&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;spacing&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# Precompute lattice layout indices&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lattice_positions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_generate_hex_lattice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_generate_hex_lattice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n_agents&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Generate 2D hexagonal lattice positions for the swarm.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Returns:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; ndarray of shape (n_agents, 2)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;positions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;idx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;positions&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;n_agents&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;positions&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;side&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;positions&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="n"&gt;n_agents&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;break&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;angle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg2rad&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;side&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;angle&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;angle&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;angle&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;angle&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;positions&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;positions&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;n_agents&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;compute_control&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ndarray&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Compute control inputs based on hex-lattice target positions.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;swarm_positions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_position&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;swarm_centroid&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;control_inputs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros_like&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# Compute each agent’s target lattice position&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_size&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;target_global&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;swarm_centroid&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lattice_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;error_vector&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;target_global&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;control_inputs&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;KP_LATTICE&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;error_vector&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# Communication-aware adjustment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_size&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;agent_status&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;rij&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;calculate_distance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# Apply communication penalty if signal too weak&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;rij&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;COMMS_RADIUS&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;control_inputs&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-=&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;KC_COMMS&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;swarm_positions&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;control_inputs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;update_swarm_state&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; Update the swarm state with computed hex-lattice control inputs.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;update_matrices&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;control_inputs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;compute_control&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply_control&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;control_inputs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;update_performance_metrics&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;update_swarm_paths&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iteration&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;⚙️ 2. Configuration Parameters to Add in &lt;code&gt;config.py&lt;/code&gt;&lt;span class="hx:absolute hx:-mt-20" id="-2-configuration-parameters-to-add-in-configpy"&gt;&lt;/span&gt;
+&lt;a href="#-2-configuration-parameters-to-add-in-configpy" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Add these lines to your configuration file to tune the behavior:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Hex lattice parameters&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;KP_LATTICE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.08&lt;/span&gt; &lt;span class="c1"&gt;# Position stiffness gain&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;KC_COMMS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.05&lt;/span&gt; &lt;span class="c1"&gt;# Communication penalty gain&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;COMMS_RADIUS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;50.0&lt;/span&gt; &lt;span class="c1"&gt;# Maximum reliable communication distance (m)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;🧠 3. How It Works&lt;span class="hx:absolute hx:-mt-20" id="-3-how-it-works"&gt;&lt;/span&gt;
+&lt;a href="#-3-how-it-works" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Step&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Lattice Generation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;_generate_hex_lattice()&lt;/code&gt; creates the ideal hex grid pattern for the number of drones.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Relative Anchoring&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Each drone’s target is offset from the swarm centroid, so moving the centroid moves the entire formation.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Local Correction&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Each drone steers toward its lattice node with proportional control (&lt;code&gt;KP_LATTICE&lt;/code&gt;).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Communication-Aware Adjustment&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;If another drone moves beyond communication range, a penalty force maintains connectivity.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Can run alongside &lt;code&gt;BehaviorController&lt;/code&gt; (for obstacle avoidance) or &lt;code&gt;FormationController&lt;/code&gt; (for fallback formation).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;🔄 4. Swapping Controllers at Runtime&lt;span class="hx:absolute hx:-mt-20" id="-4-swapping-controllers-at-runtime"&gt;&lt;/span&gt;
+&lt;a href="#-4-swapping-controllers-at-runtime" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Since your controllers are all subclasses of &lt;code&gt;BaseController&lt;/code&gt;, you can easily switch between them:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;swarm_squad_ep1.controllers.hex_lattice_controller&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;HexLatticeController&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;swarm_controller&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;HexLatticeController&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swarm_state&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spacing&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;12.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;simulation_running&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;swarm_controller&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;update_swarm_state&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you want to automatically switch between &lt;strong&gt;Formation&lt;/strong&gt; and &lt;strong&gt;Hex-Lattice&lt;/strong&gt; depending on conditions (e.g., communication loss or scaling), you can add a “ControllerManager” module that selects which control policy to use per iteration.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;🧭 5. Optional Enhancements&lt;span class="hx:absolute hx:-mt-20" id="-5-optional-enhancements"&gt;&lt;/span&gt;
+&lt;a href="#-5-optional-enhancements" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;3D Extension:&lt;/strong&gt; Add z-offsets per lattice layer to create stacked hex grids.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Neighbor Awareness:&lt;/strong&gt; Replace global loops with only nearest-neighbor updates for scalability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Scaling:&lt;/strong&gt; Adjust lattice spacing dynamically with swarm density or mission radius.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decentralization:&lt;/strong&gt; Compute centroid via local consensus to eliminate single-point dependency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Would you like me to show you how to integrate this &lt;strong&gt;HexLatticeController&lt;/strong&gt; with the &lt;strong&gt;BehaviorController&lt;/strong&gt; (so the drones still avoid obstacles and return to formation automatically)?
+That integration pattern is very common in swarm robotics.&lt;/p&gt;</description></item></channel></rss>
